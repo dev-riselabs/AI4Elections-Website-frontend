@@ -14,20 +14,20 @@ function WhyAi4Election() {
         <h2 className="text-3xl md:text-heading-2 font-bold text-white tracking-tight uppercase">
           WHY AI4ELECTIONS
         </h2>
-        <p className="text-white text-sm md:text-lg font-medium text-center max-w-[70ch]">
+        <p className="text-white text-sm md:text-lg font-medium text-center max-w-[70ch] leading-7">
           #AI4Elections is a national electoral innovation platform designed to
           connect technical talent with real-world electoral challenges.
         </p>
       </div>
       <div className="grid grid-cols-1 gap-7 md:gap-10 md:grid-cols-2">
         <div className="flex flex-col gap-8 md:gap-10 justify-center">
-          <p className="text-base md:text-xl font-medium text-white leading-10">
+          <p className="text-sm md:text-lg font-medium text-white leading-8 md:leading-10">
             The initiative brings together people working across artificial
             intelligence, software development, data science, cybersecurity,
             research, design, civic technology, electoral processes, public
             policy and related fields.
           </p>
-          <p className="text-base md:text-xl font-medium text-white leading-10">
+          <p className="text-sm md:text-lg font-medium text-white leading-8 md:leading-10">
             Through a structured pipeline of competition, research, prototyping,
             incubation and community building, participants will have the
             opportunity to move from identifying a problem to developing,

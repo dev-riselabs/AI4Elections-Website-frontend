@@ -4,62 +4,62 @@ const topics = [
   {
     id: 1,
     title: "University Students",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 2,
     title: "Developers & AI Engineers",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 3,
     title: "Cybersecurity Professionals",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 4,
     title: "Researchers",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 5,
     title: "Startups & Entrepreneurs",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 6,
     title: "Electoral Experts",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 7,
     title: "Designers",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 8,
     title: "Linguists & Communication Researchers",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 9,
     title: "Policy & Governance Professionals",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
   {
     id: 10,
     title: "Emerging Innovators",
-    description:
-      "People working across security, privacy and technology resilience.",
+    // description:
+    //   "People working across security, privacy and technology resilience.",
   },
 ];
 
@@ -87,7 +87,7 @@ communities, institutions, research, policy and the realities of electoral proce
         {/* Topics */}
         <div className="flex flex-col gap-3 justify-center">
           {topics.map((topic, index) => {
-            if (index === activeTopic) return <div key={topic.title} className="min-h-37.5 rounded-2xl bg-linear-to-t from-[#002E57] via-[#01B343] to-[#01B343] p-6 text-white">
+            if (index === activeTopic) return <div key={topic.title} className="min-h-20 rounded-2xl bg-linear-to-t from-[#002E57] via-[#01B343] to-[#01B343] p-6 text-white">
             <div className="flex items-start gap-4">
               {/* Circle */}
               <div className="mt-1 h-5 w-5 shrink-0 rounded-full border-2 border-white" />
@@ -96,9 +96,9 @@ communities, institutions, research, policy and the realities of electoral proce
                   {topic.title}
                 </h2>
 
-                <p className="mt-5 font-robotoMono text-sm leading-relaxed">
+                {/* <p className="mt-5 font-robotoMono text-sm leading-relaxed">
                   {topic.description}
-                </p>
+                </p> */}
               </div>
 
               
