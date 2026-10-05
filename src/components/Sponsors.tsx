@@ -12,7 +12,7 @@ const partners: Partner[] = [
    {
     id: 1,
     name: "Rise Networks",
-    src: "/rise_networks_logo.png",
+    src: "/risenetworks_logo.png",
     alt: "Rise Networks Logo",
   },
   {
@@ -44,13 +44,13 @@ const partners: Partner[] = [
   {
     id: 5,
     name: "Cleen Foundation",
-    src: "/Cleen Foundation Logo.jpg.jpeg",
+    src: "/cleen_logo.png",
     alt: "Cleen Foundation Logo",
   },
   {
     id: 6,
     name: "Meta",
-    src: "/Meta Logo.png",
+    src: "/meta_logo.png",
     alt: "Meta Logo",
   },
   {
@@ -62,7 +62,7 @@ const partners: Partner[] = [
    {
     id: 8,
     name: "Tap Initiative",
-    src: "/Tap Initiative Logo.jpg.jpeg",
+    src: "/tab_logo.png",
     alt: "Tap initiative Logo",
   },
 ];
@@ -167,7 +167,7 @@ export default function Sponsors() {
           {marqueeList.map((partner, index) => (
             <div
               key={`${partner.id}-${index}`}
-              className="relative flex flex-col items-center justify-center h-20 sm:h-24 px-4 md:px-8  transition-all duration-300 min-w-50 sm:min-w-57.5 cursor-pointer"
+              className="relative flex flex-col items-center justify-center h-24 sm:h-28 px-4 md:px-8  transition-all duration-300 min-w-50 sm:min-w-57.5 cursor-pointer"
             >
               <img
                 src={partner.src}
