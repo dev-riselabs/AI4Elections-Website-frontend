@@ -4,11 +4,11 @@ import { Link } from "react-router";
 
 const CTACyan: React.FC = () => {
   return (
-    <section className="w-full bg-[url('/beyond_hackathon_bg.png')] bg-cover text-gray-900 overflow-hidden">
-      <div className="max-w-6xl mx-auto xl:max-w-full xl:mx-0  md:pr-0">
+    <section className="w-full bg-[url('/beyond_hackathon_bg.png')] bg-cover bg-center text-gray-900 overflow-hidden">
+      <div className=" md:pr-0">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left Side: Align items center */}
-          <div className="flex flex-col justify-center items-start px-4 md:pr-0 md:pl-[8vw] py-8 md:py-14 mt-4 xl:mt-15 space-y-5 md:space-y-3 md:mb-8">
+          <div className="flex flex-col justify-center items-start px-4 md:pr-0 md:pl-25 py-8 md:py-14  space-y-5 md:space-y-3">
             <h2 className="text-gray-900 text-[7vw] md:text-[2.4vw] xl:text-[2.5vw] font-bold uppercase tracking-wide leading-tight ">
               STAY BEYOND THE <br /> HACKATHON.
             </h2>

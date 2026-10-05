@@ -3,14 +3,14 @@ import { Link } from "react-router";
 
 const About: React.FC = () => {
   return (
-    <section className="w-full h-full py-10 md:p-10 bg-[url('../technical_brief_bg.png')] bg-no-repeat bg-cover bg-right md:bg-center">
+    <section className="w-full h-full py-10 md:p-10 bg-[url('../technical_brief_bg.png')] bg-no-repeat bg-cover bg-center">
       <div className="max-w-6xl mx-auto px-4">
         {/* Top Image: Edge-to-edge within container rectangular image of a team meeting */}
         <div className="w-full overflow-hidden rounded-xl shadow-md mb-8">
           <img
             src="/about-meeting.jpg"
             alt="Team Meeting Collaboration"
-            className="w-full rounded-xl shadow-md object-cover max-h-[700px] hover:scale-[1.01] transition-transform duration-500"
+            className="w-full rounded-xl shadow-md object-cover max-h-175 hover:scale-[1.01] transition-transform duration-500"
           />
         </div>
 
@@ -68,17 +68,17 @@ const About: React.FC = () => {
             </p>
           </div> */}
         {/* </div> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <p className="md:col-span-2 text-sm md:text-xl text-pillar-text leading-9">Elections are increasingly shaped by digital technologies, artificial intelligence and the way information is created, shared and accessed. At the same time, new technologies present opportunities to strengthen electoral information, improve access to civic participation, support election observation and develop more resilient systems. #AI4Elections brings together Nigeria's technology, research, academic, civic and electoral communities to explore how responsible AI and digital innovation can contribute to more transparent, inclusive and accountable elections.</p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center">
+          <p className="lg:col-span-2 text-sm md:text-xl text-pillar-text leading-9">Elections are increasingly shaped by digital technologies, artificial intelligence and the way information is created, shared and accessed. At the same time, new technologies present opportunities to strengthen electoral information, improve access to civic participation, support election observation and develop more resilient systems. #AI4Elections brings together Nigeria's technology, research, academic, civic and electoral communities to explore how responsible AI and digital innovation can contribute to more transparent, inclusive and accountable elections.</p>
           <div className="flex flex-col gap-4">
             <p className=" text-sm md:text-xl text-pillar-text leading-9">Led by <Link to="https://risenetworks.org" className="text-accent-text font-bold">Rise Networks</Link>, #AI4Elections is a national, multidisciplinary and nonpartisan initiative focused on developing practical technology solutions to real electoral challenges. The initiative brings together developers, AI and data professionals, researchers, students, designers, electoral experts, civic organisations, policy professionals and other innovators to develop, test and explore responsible approaches to electoral technology.</p>
             <p className=" text-sm md:text-xl text-pillar-text leading-9"><span className="font-bold">The initiative is built around three connected components:</span> the #AI4Elections Hackathon, the #AI4Elections Innovation Lab, and the #AI4Elections Community of Practice. The Hackathon provides a platform for teams to develop innovative solutions across key electoral challenge areas. Selected projects may progress into the Innovation Lab for further technical development, validation and mentorship, while the Community of Practice provides an ongoing network for research, collaboration, learning and knowledge exchange.</p>
 
           </div>
-          <img src="./technical_brief_img (2).png" alt="" className="w-full h-full" />
+          <img src="./technical_brief_img (2).png" alt="" className="w-full h-full " />
           
-          <p className="md:col-span-2 text-sm md:text-xl text-pillar-text leading-9">Running from October 2026 to February 2027, #AI4Elections will officially kick off on <span className="font-bold">Thursday 8th October 2026</span>, bringing together innovators, researchers, developers, students, electoral experts and civic practitioners to explore responsible applications of AI and technology for electoral innovation.</p>
-          <p className="md:col-span-2 text-sm md:text-xl text-pillar-text leading-9">Applications for the Hackathon will remain open until <span className="font-bold">Thursday 29th October 2026 at 11:59pm WAT</span>, after which selected participants will progress through team formation, technical orientation, mentorship, development and testing.</p>
+          <p className="lg:col-span-2 text-sm md:text-xl text-pillar-text leading-9">Running from October 2026 to February 2027, #AI4Elections will officially kick off on <span className="font-bold">Thursday 8th October 2026</span>, bringing together innovators, researchers, developers, students, electoral experts and civic practitioners to explore responsible applications of AI and technology for electoral innovation.</p>
+          <p className="lg:col-span-2 text-sm md:text-xl text-pillar-text leading-9">Applications for the Hackathon will remain open until <span className="font-bold">Thursday 29th October 2026 at 11:59pm WAT</span>, after which selected participants will progress through team formation, technical orientation, mentorship, development and testing.</p>
         </div>
       </div>
     </section>

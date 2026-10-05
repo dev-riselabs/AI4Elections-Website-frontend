@@ -4,26 +4,24 @@ import { Play, Pause, MoveLeft, MoveRight } from 'lucide-react';
 interface Partner {
   id: number;
   name: string;
-  role: string;
   src: string;
   alt: string;
 }
 
 const partners: Partner[] = [
-  {
+   {
     id: 1,
-    name: "NITDA Nigeria",
-    role: "Headline Tech Partner",
-    src: "/nitda_logo.png",
-    alt: "NITDA Logo",
-  },
-  {
-    id: 2,
     name: "Rise Networks",
-    role: "Lead Convener",
     src: "/rise_networks_logo.png",
     alt: "Rise Networks Logo",
   },
+  {
+    id: 2,
+    name: "NITDA Nigeria",
+    src: "/nitda_logo.png",
+    alt: "NITDA Logo",
+  },
+ 
   // {
   //   id: 3,
   //   name: "AI4Elections",
@@ -34,16 +32,38 @@ const partners: Partner[] = [
   {
     id: 3,
     name: "NCC Nigeria",
-    role: "Institutional Partner",
     src: "/ncc_logo.png",
     alt: "NCC Logo",
   },
   {
     id: 4,
     name: "INEC Nigeria",
-    role: "Electoral Stakeholder",
     src: "/inec_logo.png",
     alt: "INEC Logo",
+  },
+  {
+    id: 5,
+    name: "Cleen Foundation",
+    src: "/Cleen Foundation Logo.jpg.jpeg",
+    alt: "Cleen Foundation Logo",
+  },
+  {
+    id: 6,
+    name: "Meta",
+    src: "/Meta Logo.png",
+    alt: "Meta Logo",
+  },
+  {
+    id: 7,
+    name: "Nithub",
+    src: "/nithub_logo.png",
+    alt: "Nithub Logo",
+  },
+   {
+    id: 8,
+    name: "Tap Initiative",
+    src: "/Tap Initiative Logo.jpg.jpeg",
+    alt: "Tap initiative Logo",
   },
 ];
 
@@ -68,7 +88,7 @@ export default function Sponsors() {
     <section
       id="partners"
       aria-label="Partners and Sponsors"
-      className="relative bg-white py-8 sm:py-10 border-b border-gray-100 overflow-hidden"
+      className="relative bg-white py-4 md:py-8  border-b border-gray-100 overflow-hidden"
     >
       {/* Header Bar */}
       <div className="max-w-7xl mx-auto px-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -147,12 +167,12 @@ export default function Sponsors() {
           {marqueeList.map((partner, index) => (
             <div
               key={`${partner.id}-${index}`}
-              className="relative flex flex-col items-center justify-center h-20 sm:h-28 px-8 py-3.5  transition-all duration-300 min-w-50 sm:min-w-57.5 cursor-pointer"
+              className="relative flex flex-col items-center justify-center h-20 sm:h-24 px-4 md:px-8  transition-all duration-300 min-w-50 sm:min-w-57.5 cursor-pointer"
             >
               <img
                 src={partner.src}
                 alt={partner.alt}
-                className=" h-full w-full object-fill transition-transform duration-300 group-hover:scale-105"
+                className=" h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />
 

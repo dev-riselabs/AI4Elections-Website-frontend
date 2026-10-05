@@ -4,8 +4,8 @@ import { Link } from "react-router";
 
 const CTAPurple: React.FC = () => {
   return (
-    <section className="w-full bg-[url('/dont_develop_bg.png')] bg-cover text-white overflow-hidden pt-4 font-robotoMono">
-      <div className="max-w-6xl mx-auto xl:max-w-full xl:mx-0  md:pl-0 ">
+    <section className="w-full bg-[url('/dont_develop_bg.png')] bg-cover bg-center text-white overflow-hidden pt-4 font-robotoMono">
+      <div className=" ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4  items-center">
           {/* Left Side: Cutout image of three people */}
           <div className="flex justify-center md:justify-start items-end self-end order-2 md:order-1 pt-15">
@@ -17,7 +17,7 @@ const CTAPurple: React.FC = () => {
           </div>
 
           {/* Right Side: Align items center */}
-          <div className="flex flex-col justify-center items-start py-8 px-4 md:pr-[14vw]  space-y-5 md:space-y-3 order-1 md:order-2">
+          <div className="flex flex-col justify-center items-start py-8 px-4 md:pr-25 space-y-5 md:space-y-3 order-1 md:order-2">
             <h2 className="text-white text-[7vw] md:text-[2.4vw] xl:text-[2.5vw] font-bold uppercase tracking-wide leading-tight">
               DON'T DEVELOP AI <br />
               FOR THE SAKE OF AI

@@ -3,7 +3,7 @@ import CountdownTimer from "./CountDown";
 import { Link } from "react-router";
 export default function Hero() {
   return (
-    <section className="w-full h-full md:h-145 lg:h-176 xl:h-260 bg-[url('/hero-bg.png')]  bg-no-repeat bg-cover bg-right md:bg-center font-robotoMono p-2 md:p-6">
+    <section className="w-full h-full  bg-[url('/hero-bg.png')]  bg-no-repeat bg-cover bg-center md:bg-center font-robotoMono p-2 md:p-6">
       {/* Top Bar (Navbar): Flex container with three distinct sections */}
       <header className="w-full ">
         <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
