@@ -146,7 +146,7 @@ const socialLinks = [
 const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-black text-white font-roboto md:pt-14">
-      <div className="mx-auto xl:max-w-7xl px-4 pt-12 md:px-10 xl:px-6">
+      <div className="mx-auto xl:max-w-7xl px-5 pt-12 md:px-10 xl:px-6">
         <div className="flex flex-col gap-8 md:flex-row items-center">
           <div className="flex justify-center xl:justify-start">
             <img
@@ -164,7 +164,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-4 pb-8 md:pt-12 md:px-10 xl:px-6">
+      <div className="mx-auto max-w-7xl px-5 pb-8 md:pt-12 md:px-10 xl:px-6">
         <div className="grid gap-6 md:grid-cols-12   xl:gap-8">
           <div className="md:col-span-9 mt-7 md:mt-10 grid gap-6 md:grid-cols-3 lg:grid-cols-4 xl:gap-8">
             {footerGroups.map((group) => (

@@ -41,14 +41,14 @@ export default function Hero() {
           <div className="grid grid-cols-1 md:grid-cols-12 md:gap-0 lg:pt-5 items-center">
             {/* Left Column */}
             <div className="col-span-7 md:pl-8 xl:col-span-8 md:py-2 space-y-8 ">
-              <h1 className="text-[11vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-4 md:mb-0 xl:mb-6 tracking-tight leading-tight px-2 md:px-6 lg:pl-10">
+              <h1 className="text-[10vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-4 md:mb-0 xl:mb-6 tracking-tight leading-tight px-2 md:px-6 lg:pl-10">
                 <span className="bg-linear-to-b from-brand-blue to-brand-purple bg-clip-text text-transparent">
                   #AI4ELECTIONS
                 </span>{" "}
                 <br /> HACKATHON 2026
               </h1>
 
-              <p className="text-sm md:text-[1.3vw] text-white leading-[1.8] p-2 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4">
+              <p className="text-xs md:text-[1.3vw] text-white leading-[1.8] p-2 px-3 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4">
                 The #AI4Elections Hackathon is a national, multidisciplinary,
                 nonpartisan electoral innovation project created by Rise
                 Networks to mobilise and connect Nigeria's technology ecosystem,

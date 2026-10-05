@@ -8,12 +8,12 @@ const CTACyan: React.FC = () => {
       <div className=" md:pr-0">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left Side: Align items center */}
-          <div className="flex flex-col justify-center items-start px-4 md:pr-0 md:pl-25 py-8 md:py-14  space-y-5 md:space-y-3">
+          <div className="flex flex-col justify-center items-start px-5 md:px-4 md:pr-0 md:pl-25 py-8 md:py-14  space-y-5 md:space-y-3">
             <h2 className="text-gray-900 text-[7vw] md:text-[2.4vw] xl:text-[2.5vw] font-bold uppercase tracking-wide leading-tight ">
               STAY BEYOND THE <br /> HACKATHON.
             </h2>
 
-            <p className="text-gray-700 text-sm md:text-[1.5vw] xl:text-[1.4vw] leading-loose">
+            <p className="text-gray-700 text-sm md:text-[1.5vw] xl:text-[1.4vw] leading-7 md:leading-9">
               The #AI4Elections Community of Practice will connect participants,
               researchers, developers, mentors, institutions and alumni beyond
               the inaugural competition.
