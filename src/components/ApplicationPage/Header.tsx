@@ -3,8 +3,8 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 function Header() {
   return (
     <header className="px-4 md:px-10 lg:px-25 grid grid-cols-[70px_auto] md:grid-cols-[auto_auto_auto] py-4 gap-5 md:gap-8">
-      <p className="text-[3.5vw] md:text-[1.3vw] text-center  font-bold text-accent-text md:self-center col-span-2 md:col-span-1">
-        Application Deadline: 5th November,2026
+      <p className="text-[3.5vw] md:text-[1.3vw] text-center  font-bold text-white md:self-center col-span-2 md:col-span-1">
+        <span className="text-accent-text">Application Deadline:</span> 5th November,2026
       </p>
 
       <img

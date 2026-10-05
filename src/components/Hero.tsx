@@ -8,9 +8,9 @@ export default function Hero() {
       <header className="w-full ">
         <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
           {/* Left: Dark blue background with white text */}
-          <div className="flex items-center gap-2 md:pl-[7vw] lg:pl-[7.5vw] xl:pl-[10vw]  py-1.5  text-accent-text text-[3.4vw] md:text-[1.4vw] xl:text-[1.2vw]  font-medium tracking-wide">
+          <div className="flex items-center gap-2 md:pl-[7vw] lg:pl-[7.5vw] xl:pl-[10vw]  py-1.5  text-white text-[3.4vw] md:text-[1.4vw] xl:text-[1.2vw]  font-medium tracking-wide">
             <span className="text-center">
-              Application Deadline: <br />
+              <span className="text-accent-text">Application Deadline:</span> <br />
               Thursday 29th October 2026 at 11:59pm WAT
             </span>
           </div>
