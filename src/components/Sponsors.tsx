@@ -47,12 +47,12 @@ const partners: Partner[] = [
     src: "/cleen_logo.png",
     alt: "Cleen Foundation Logo",
   },
-  {
-    id: 6,
-    name: "Meta",
-    src: "/meta_logo.png",
-    alt: "Meta Logo",
-  },
+  // {
+  //   id: 6,
+  //   name: "Meta",
+  //   src: "/meta_logo.png",
+  //   alt: "Meta Logo",
+  // },
   {
     id: 7,
     name: "Nithub",
