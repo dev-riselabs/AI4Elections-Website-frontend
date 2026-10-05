@@ -52,19 +52,19 @@ function FormContainer() {
         )}
       <div className="flex flex-col rounded-3xl border border-form-border border-t-0 overflow-hidden relative p-4 md:p-8 gap-12">
         <div className="w-full h-1.5 bg-linear-to-r from-[#2563EB] to-[#7C3AED] top-0 left-0 absolute"></div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-5">
           {/* personal information */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-5">
             <h3 className="text-xl md:text-2xl text-price-banner">Personal Information</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   First Name *
                 </label>
-                <div className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
+                <div className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
                   <LuUser className="w-5 md:w-6 h-5 md:h-6" />
                   <input
                     type="text"
@@ -78,11 +78,11 @@ function FormContainer() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   Last Name *
                 </label>
-                <div className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
+                <div className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
                   <LuUser className="w-5 md:w-6 h-5 md:h-6" />
                   <input
                     type="text"
@@ -96,11 +96,11 @@ function FormContainer() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   Email Address *
                 </label>
-                <div className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
+                <div className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
                   <HiOutlineMail className="w-5 md:w-6 h-5 md:h-6" />
                   <input
                     type="email"
@@ -114,11 +114,11 @@ function FormContainer() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   Phone Number *
                 </label>
-                <div className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
+                <div className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
                   <LuPhone className="w-5 md:w-6 h-5 md:h-6" />
                   <input
                     type="text"
@@ -133,22 +133,22 @@ function FormContainer() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   What best describe your application? *
                 </label>
-                <select name="application_type" className="rounded-xl bg-form-input shadow text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
+                <select name="application_type" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
                   <option value="">Select</option><option value="Individual">Individual</option><option value="Team">Team</option><option value="Organization">Organization</option>
                 </select>
               </div>
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   Organisation / Institution *
                 </label>
-                <div className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
+                <div className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
                   {/* <TbBriefcase2 className="w-5 md:w-6 h-5 md:h-6" /> */}
                   <input
                     type="text"
@@ -162,38 +162,38 @@ function FormContainer() {
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   What areas are you interested in? *
                 </label>
-                <input name="areas_of_interest" type="text" placeholder="Enter your areas of interest" className="rounded-xl bg-form-input shadow text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+                <input name="areas_of_interest" type="text" placeholder="Enter your areas of interest" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
               </div>
                <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   How would you like to participate? *
                 </label>
-                <input name="participation_preference" type="text" placeholder="How would you like to participate?" className="rounded-xl bg-form-input shadow text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+                <input name="participation_preference" type="text" placeholder="How would you like to participate?" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
               </div>
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor=""
-                  className="text-base md:text-xl text-header-text font-semibold"
+                  className="text-sm md:text-base text-header-text font-medium"
                 >
                   Education Qualification *
                 </label>
-                <input name="education_qualification" type="text" placeholder="Enter your qualification" className="rounded-xl bg-form-input shadow text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+                <input name="education_qualification" type="text" placeholder="Enter your qualification" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
               </div>
               <div className="flex flex-col gap-2 md:col-span-2">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-sm md:text-base text-header-text font-medium"
               >
                 Tell us a little about yourself *
               </label>
-              <textarea name="about_yourself" placeholder="Briefly tell us about your interests, experience or what you hope to contribute." className="rounded-xl bg-form-input shadow flex text-sm md:text-base items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="about_yourself" placeholder="Briefly tell us about your interests, experience or what you hope to contribute." className="rounded-xl bg-form-input shadow-md flex text-sm md:text-base items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             </div>
           </div>
@@ -203,9 +203,9 @@ function FormContainer() {
 
 
            {/* Community Consent *  */}
-        <div className="flex flex-col gap-4 pb-3">
+        <div className="flex flex-col gap-5 pb-3">
           <h3 className="text-xl md:text-2xl text-price-banner">Community Consent *</h3>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-5">
             <div className="flex items-center gap-3">
               <input type="checkbox" name="community_consent" value="true" required />
               <label htmlFor="" className="text-header-text text-xs md:text-base">
@@ -220,9 +220,9 @@ function FormContainer() {
 
 
            {/* Email Updates */}
-        <div className="flex flex-col gap-4 pb-3">
+        <div className="flex flex-col gap-5 pb-3">
           <h3 className="text-xl md:text-2xl text-price-banner">Email Updates</h3>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-5">
             <div className="flex items-center gap-3">
               <input type="checkbox" name="email_updates" value="true" />
               <label htmlFor="" className="text-header-text text-xs md:text-base">
@@ -236,7 +236,7 @@ function FormContainer() {
           {/* divider */}
           <div className="max-w-147.25 bg-divider w-full h-0.5"></div>
         </div>
-        <button type="submit" disabled={isSubmitting} className="flex items-center gap-2 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-2 md:px-6 py-3 justify-center disabled:opacity-60">
+        <button type="submit" disabled={isSubmitting} className="flex items-center gap-2 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-2 md:px-6 py-2 md:py-3 justify-center disabled:opacity-60">
           {isSubmitting ? "Submitting..." : "Join the Community of Practice"}
           <IoArrowForwardSharp className="w-5 md:w-6 h-5 md:h-6" />
         </button>

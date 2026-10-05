@@ -131,10 +131,10 @@ export default function Sponsors() {
         onTouchEnd={() => setIsHovered(false)}
       >
         {/* Left smooth fade mask */}
-        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-28 md:w-44 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-28 md:w-44 bg-linear-to-r from-white via-white/80 to-transparent z-10" />
 
         {/* Right smooth fade mask */}
-        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-28 md:w-44 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-28 md:w-44 bg-linear-to-l from-white via-white/80 to-transparent z-10" />
 
         {/* Sliding Marquee Track */}
         <div
@@ -147,7 +147,7 @@ export default function Sponsors() {
           {marqueeList.map((partner, index) => (
             <div
               key={`${partner.id}-${index}`}
-              className="relative flex flex-col items-center justify-center h-20 sm:h-28 px-8 py-3.5  transition-all duration-300 min-w-[200px] sm:min-w-[230px] cursor-pointer"
+              className="relative flex flex-col items-center justify-center h-20 sm:h-28 px-8 py-3.5  transition-all duration-300 min-w-50 sm:min-w-57.5 cursor-pointer"
             >
               <img
                 src={partner.src}

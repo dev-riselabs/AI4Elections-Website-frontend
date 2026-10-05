@@ -144,7 +144,7 @@ function LocationFields() {
       <div className="flex flex-col gap-2">
         <label
           htmlFor="residence-country"
-          className="text-base md:text-xl text-header-text font-semibold"
+          className="text-sm md:text-lg text-header-text font-medium"
         >
           Country of Residence *
         </label>
@@ -198,7 +198,7 @@ function LocationFields() {
       <div className="flex flex-col gap-2">
         <label
           htmlFor="residence-state"
-          className="text-base md:text-xl text-header-text font-semibold"
+          className="text-sm md:text-lg text-header-text font-medium"
         >
           State of Residence *
         </label>
@@ -254,7 +254,7 @@ function LocationFields() {
       <div className="flex flex-col gap-2">
         <label
           htmlFor="residence-city"
-          className="text-base md:text-xl text-header-text font-semibold"
+          className="text-sm md:text-lg text-header-text font-medium"
         >
           City *
         </label>

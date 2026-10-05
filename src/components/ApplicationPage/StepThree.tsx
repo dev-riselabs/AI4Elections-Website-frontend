@@ -20,7 +20,7 @@ function StepThree({ handleNext }: StepThreeProps) {
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 Do you already have a solution idea? *
               </label>
@@ -43,63 +43,63 @@ function StepThree({ handleNext }: StepThreeProps) {
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 If Yes, what problem are you trying to solve? *
               </label>
-              <textarea name="problem_to_solve" className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="problem_to_solve" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 Who is affected by this problem? *
               </label>
-              <textarea name="affected_people" className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="affected_people" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 Describe your proposed solution *
               </label>
-              <textarea name="proposed_solution" className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="proposed_solution" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 How would AI or technology contribute to the solution? *
               </label>
-              <textarea name="technology_contribution" className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="technology_contribution" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 Who would benefit from the solution? *
               </label>
-              <textarea name="beneficiaries" className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="beneficiaries" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 What makes your approach different or useful? *
               </label>
-              <textarea name="differentiation" className="rounded-xl bg-form-input shadow flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="differentiation" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             </div>}
 
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 What stage is your idea currently at? *
               </label>
@@ -152,7 +152,7 @@ function StepThree({ handleNext }: StepThreeProps) {
             <div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 Do you already have a prototype?
               </label>
@@ -175,11 +175,11 @@ function StepThree({ handleNext }: StepThreeProps) {
             {hasPrototype === "true" && <div className="flex flex-col gap-2">
               <label
                 htmlFor=""
-                className="text-base md:text-xl text-header-text font-semibold"
+                className="text-base md:text-xl text-header-text font-medium"
               >
                 If yes, prototype/project link
               </label>
-              <div className="rounded-xl bg-form-input shadow  flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
+              <div className="rounded-xl bg-form-input shadow-md  flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
                 {/* <LuPhone className="w-5 md:w-6 h-5 md:h-6" /> */}
                 <input
                   type="url"
@@ -199,14 +199,14 @@ function StepThree({ handleNext }: StepThreeProps) {
       <div className="flex gap-4 md:gap-6 items-center">
         <button type="button"
           onClick={() => handleNext(2)}
-          className="flex items-center gap-2 border-3 h-14 flex-1 border-special-green-icon text-special-green-icon font-bold text-sm md:text-lg rounded-md px-6 py-3 justify-center min-w-0"
+          className="flex items-center gap-2 border-3 h-10 md:h-14 flex-1 border-special-green-icon text-special-green-icon font-bold text-sm md:text-lg rounded-md px-6 py-3 justify-center min-w-0"
         >
           <IoArrowBackOutline className="w-5 md:w-6 h-5 md:h-6" />
           Previous
         </button>
         <button type="button"
           onClick={() => handleNext(4)}
-          className="flex items-center gap-2 h-14 flex-1 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-6 py-3 justify-center min-w-0"
+          className="flex items-center gap-2 h-10 md:h-14 flex-1 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-6 py-3 justify-center min-w-0"
         >
           Next
           <IoArrowForwardSharp className="w-5 md:w-6 h-5 md:h-6" />

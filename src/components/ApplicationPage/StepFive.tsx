@@ -20,12 +20,12 @@ function StepFive({ isSubmitting }: StepFiveProps) {
       <div className="w-full h-1.5 bg-linear-to-r from-[#2563EB] to-[#7C3AED] top-0 left-0 absolute"></div>
       <div className="flex flex-col gap-6">
         {/* Applying as an Individual */}
-        <div className="flex flex-col gap-4 pb-3">
+        <div className="flex flex-col gap-6 pb-3">
           <h3 className="text-xl md:text-2xl text-price-banner">
             Responsible Participation *
           </h3>
-          <div className="flex flex-col gap-4">
-            <p className="text-base md:text-xl">
+          <div className="flex flex-col gap-6">
+            <p className="text-sm md:text-base">
               #AI4Elections is a nonpartisan public-interest innovation
               programme. All participants are expected to respect electoral law,
               fundamental rights, privacy, security and responsible AI
@@ -37,15 +37,15 @@ function StepFive({ isSubmitting }: StepFiveProps) {
         <div className="max-w-147.25 bg-divider w-full h-0.5"></div>
 
         {/* Key commitments */}
-        <div className="flex flex-col gap-4 pb-3">
+        <div className="flex flex-col gap-6 pb-3">
           <h3 className="text-xl md:text-2xl text-price-banner">Key commitments *</h3>
-          <div className="flex flex-col gap-4">
-            <p className="text-base md:text-xl">
+          <div className="flex flex-col gap-6">
+            <p className="text-sm md:text-base">
               By participating, you agree that you will not:
             </p>
             <ul className="flex flex-col gap-2 list-disc list-inside">
               {commitments.map((commitment) => (
-                <li key={commitment} className="text-base md:text-xl">
+                <li key={commitment} className="text-sm md:text-base">
                   {commitment}
                 </li>
               ))}
@@ -57,9 +57,9 @@ function StepFive({ isSubmitting }: StepFiveProps) {
         <div className="max-w-147.25 bg-divider w-full h-0.5"></div>
 
         {/* Confirmation  */}
-        <div className="flex flex-col gap-4 pb-3">
+        <div className="flex flex-col gap-6 pb-3">
           <h3 className="text-xl md:text-2xl text-price-banner">Confirmation *</h3>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
               <input type="checkbox" name="responsible_participation_confirmed" value="true" required />
               <label htmlFor="" className="text-header-text text-sm md:text-base">
@@ -74,21 +74,21 @@ function StepFive({ isSubmitting }: StepFiveProps) {
         <div className="max-w-147.25 bg-divider w-full h-0.5"></div>
 
         {/* Data & Privacy  */}
-        <div className="flex flex-col gap-4 pb-3">
+        <div className="flex flex-col gap-6 pb-3">
           <h3 className="text-xl md:text-2xl text-price-banner">Data & Privacy *</h3>
           <div className="flex flex-col gap-6">
-            <p className="text-base md:text-xl">
+            <p className="text-sm md:text-base">
               Information submitted through this application will be used to
               administer the #AI4Elections Hackathon, assess applications,
               communicate with applicants and support programme planning and
               reporting.
             </p>
-            <p className="text-base md:text-xl">
+            <p className="text-sm md:text-base">
               Where you separately consent to participate in the #AI4Elections
               Community of Practice, relevant professional information may be
               included in the programme's consent-based community registry.
             </p>
-            <p className="text-base md:text-xl">
+            <p className="text-sm md:text-base">
               You will receive appropriate information about how your data is
               collected, used, stored and protected, including how you can
               update or withdraw your information where applicable.
@@ -100,7 +100,7 @@ function StepFive({ isSubmitting }: StepFiveProps) {
         <div className="max-w-147.25 bg-divider w-full h-0.5"></div>
 
         {/* checkbox */}
-        <div className="flex flex-col gap-4 pb-3">
+        <div className="flex flex-col gap-6 pb-3">
           <div className="flex items-center gap-3">
             <input type="checkbox" name="information_accurate" value="true" required />
             <label htmlFor="" className="text-header-text text-sm md:text-base">
@@ -128,25 +128,25 @@ function StepFive({ isSubmitting }: StepFiveProps) {
         <div className="max-w-147.25 bg-divider w-full h-0.5"></div>
 
         {/* Applicant Declaration   */}
-        <div className="flex flex-col gap-4 pb-3">
+        <div className="flex flex-col gap-6 pb-3">
           <h3 className="text-xl md:text-2xl text-price-banner">
             Applicant Declaration *
           </h3>
           <div className="flex flex-col gap-6">
-            <p className="text-base md:text-xl">
+            <p className="text-sm md:text-base">
               I confirm that the information provided in this application is
               accurate and complete to the best of my knowledge.
             </p>
-            <p className="text-base md:text-xl">
+            <p className="text-sm md:text-base">
               I understand that participation in the #AI4Elections Hackathon is
               subject to the programme's eligibility requirements, code of
               conduct, technical rules and safeguarding requirements.
             </p>
-            <p className="text-base md:text-xl">
+            <p className="text-sm md:text-base">
               I understand that participation or winning an award does not
               constitute approval for operational deployment of a solution.
             </p>
-            <p className="text-base md:text-xl">
+            <p className="text-sm md:text-base">
               I agree to comply with applicable laws, programme rules and
               responsible technology requirements throughout my participation.
             </p>
@@ -157,7 +157,7 @@ function StepFive({ isSubmitting }: StepFiveProps) {
         <div className="max-w-147.25 bg-divider w-full h-0.5"></div>
 
         {/* checkbox */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3">
             <input type="checkbox" name="applicant_declaration_agreed" value="true" required />
             <label htmlFor="" className="text-header-text text-sm md:text-base">
@@ -181,7 +181,7 @@ function StepFive({ isSubmitting }: StepFiveProps) {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="flex items-center gap-2 h-14 flex-1 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-6 py-3 justify-center"
+          className="flex items-center gap-2 h-10 md:h-14 flex-1 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-6 py-3 justify-center"
         >
           {isSubmitting ? "Submitting..." : "Submit Application"}
           <IoArrowForwardSharp className="w-5 md:w-6 h-5 md:h-6" />
