@@ -67,7 +67,7 @@ export default function Hero() {
                 >
                   APPLY NOW ! <FaArrowRight />
                 </Link>
-                <button className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.8rem] md:text-[1vw] lg:text-md px-6 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer">
+                <button className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1vw] lg:text-md px-6 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer">
                   Join #AI4Elections Dev Hub <FaArrowRight />
                 </button>
               </div>
