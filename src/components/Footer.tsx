@@ -251,7 +251,7 @@ const Footer: React.FC = () => {
             <div className="flex flex-wrap text-center justify-center items-center gap-4 text-[12px] text-white md:text-[13px]">
               <span>© Copyright 2025. Rise Networks | All Rights Reserved</span>
               <a
-                href="#terms-and-conditions"
+                href="/terms-condition"
                 className="transition-colors  hover:text-[#f5a15b]"
               >
                 Terms and Conditions
