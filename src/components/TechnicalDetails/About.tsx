@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import { motion } from "framer-motion";
 
 const About: React.FC = () => {
   return (
@@ -111,10 +112,25 @@ const About: React.FC = () => {
               exchange.
             </p>
           </div>
-          <img
+          <motion.img
             src="./technical_brief_img (2).png"
             alt=""
             className="w-full h-full "
+            initial={{
+              opacity: 0,
+              scale: 0.95,
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+            }}
+            viewport={{
+              once: true,
+              amount: 0.3,
+            }}
+            transition={{
+              duration: 0.8,
+            }}
           />
 
           <p className="lg:col-span-2 text-sm md:text-xl text-pillar-text leading-7 md:leading-9">

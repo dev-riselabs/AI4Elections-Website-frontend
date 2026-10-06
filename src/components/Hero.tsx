@@ -3,7 +3,6 @@ import CountdownTimer from "./CountDown";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 
-
 export default function Hero() {
   return (
     <section className="w-full h-full  bg-[url('/hero-bg.png')]  bg-no-repeat bg-cover bg-center md:bg-center font-robotoMono p-2 md:p-6">
@@ -13,7 +12,8 @@ export default function Hero() {
           {/* Left: Dark blue background with white text */}
           <div className="flex items-center gap-2 md:pl-[7vw] lg:pl-[7.5vw] xl:pl-[10vw]  py-1.5  text-white text-[3.4vw] md:text-[1.4vw] xl:text-[1.2vw]  font-medium tracking-wide">
             <span className="text-center">
-              <span className="text-accent-text">Application Deadline:</span> <br />
+              <span className="text-accent-text">Application Deadline:</span>{" "}
+              <br />
               Thursday 29th October 2026 at 11:59pm WAT
             </span>
           </div>
@@ -43,21 +43,30 @@ export default function Hero() {
         <div className="relative z-10 ">
           <div className="grid grid-cols-1 md:grid-cols-12 md:gap-0 lg:pt-5 items-center">
             {/* Left Column */}
-            <motion.div initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }} className="col-span-7 md:pl-8 xl:col-span-8 md:py-2 space-y-8 ">
-              <motion.h1 initial={{ opacity: 0, y: 30 }}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }} className="text-[10vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-4 md:mb-0 xl:mb-6 tracking-tight leading-tight px-2 md:px-6 lg:pl-10">
+              transition={{ duration: 0.8 }}
+              className="col-span-7 md:pl-8 xl:col-span-8 md:py-2 space-y-8 "
+            >
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                className="text-[10vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-4 md:mb-0 xl:mb-6 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
+              >
                 <span className="bg-linear-to-b from-brand-blue to-brand-purple bg-clip-text text-transparent">
                   #AI4ELECTIONS
                 </span>{" "}
                 <br /> HACKATHON 2026
               </motion.h1>
 
-              <motion.p initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.4 }} className="text-xs md:text-[1.3vw] text-white leading-[1.8] p-2 px-3 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.4 }}
+                className="text-xs md:text-[1.3vw] text-white leading-[1.8] p-2 px-3 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4"
+              >
                 The #AI4Elections Hackathon is a national, multidisciplinary,
                 nonpartisan electoral innovation project created by Rise
                 Networks to mobilise and connect Nigeria's technology ecosystem,
@@ -69,19 +78,43 @@ export default function Hero() {
                 inclusion and democratic participation in Nigeria.
               </motion.p>
 
-              <motion.div initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.6 }}
- className="flex flex-wrap items-center gap-4 md:mb-4 xl:mb-8 pt-2 px-2 md:px-6 lg:pl-10">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.6 }}
+                className="flex flex-wrap items-center gap-4 md:mb-4 xl:mb-8 pt-2 px-2 md:px-6 lg:pl-10"
+              >
                 <Link
                   to="/application"
                   className="flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.4vw] text-white px-16 md:px-4 lg:px-12 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
                 >
                   APPLY NOW ! <FaArrowRight />
                 </Link>
-                <button className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1vw] lg:text-md px-6 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer">
-                  Join #AI4Elections Dev Hub <FaArrowRight />
-                </button>
+                <motion.button
+                  whileHover={{
+                    scale: 1.05,
+                  }}
+                  whileTap={{
+                    scale: 0.95,
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 15,
+                  }}
+                  className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1vw] lg:text-md px-6 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
+                >
+                  Join #AI4Elections Dev Hub{" "}
+                  <motion.span
+                    animate={{ x: [0, 4, 0] }}
+                    transition={{
+                      duration: 1.2,
+                      repeat: Infinity,
+                    }}
+                  >
+                    <FaArrowRight />
+                  </motion.span>
+                </motion.button>
               </motion.div>
               <CountdownTimer />
             </motion.div>
@@ -93,8 +126,8 @@ export default function Hero() {
                 alt="Hero People"
                 className="w-full max-w-md md:max-w-none object-contain align-center drop-shadow-2xl"
                 initial={{ opacity: 0, x: 80, scale: 0.95 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.9, delay: 0.3 }}
+                animate={{ opacity: 1, x: 0, scale: 1 }}
+                transition={{ duration: 0.9, delay: 0.3 }}
               />
             </div>
           </div>
