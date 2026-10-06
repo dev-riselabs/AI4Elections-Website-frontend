@@ -70,7 +70,7 @@ const About: React.FC = () => {
           </div> */}
         {/* </div> */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-center">
-          <p className="lg:col-span-2 text-sm md:text-xl text-pillar-text leading-7 md:leading-9">
+          <p className="lg:col-span-2 text-sm md:text-md text-pillar-text leading-7 md:leading-9">
             Elections are increasingly shaped by digital technologies,
             artificial intelligence and the way information is created, shared
             and accessed. At the same time, new technologies present
@@ -82,7 +82,7 @@ const About: React.FC = () => {
             more transparent, inclusive and accountable elections.
           </p>
           <div className="flex flex-col gap-4">
-            <p className=" text-sm md:text-xl text-pillar-text leading-7 md:leading-9">
+            <p className=" text-sm md:text-md text-pillar-text leading-7 md:leading-9">
               Led by{" "}
               <Link
                 to="https://risenetworks.org"
@@ -98,7 +98,7 @@ const About: React.FC = () => {
               professionals and other innovators to develop, test and explore
               responsible approaches to electoral technology.
             </p>
-            <p className=" text-sm md:text-xl text-pillar-text leading-7 md:leading-9">
+            <p className=" text-sm md:text-md text-pillar-text leading-7 md:leading-9">
               <span className="font-bold">
                 The initiative is built around three connected components:
               </span>{" "}
@@ -133,7 +133,7 @@ const About: React.FC = () => {
             }}
           />
 
-          <p className="lg:col-span-2 text-sm md:text-xl text-pillar-text leading-7 md:leading-9">
+          <p className="lg:col-span-2 text-sm md:text-md text-pillar-text leading-7 md:leading-9">
             Running from October 2026 to February 2027, #AI4Elections will
             officially kick off on{" "}
             <span className="font-bold">Thursday 8th October 2026</span>,
@@ -141,7 +141,7 @@ const About: React.FC = () => {
             electoral experts and civic practitioners to explore responsible
             applications of AI and technology for electoral innovation.
           </p>
-          <p className="lg:col-span-2 text-sm md:text-xl text-pillar-text leading-7 md:leading-9">
+          <p className="lg:col-span-2 text-sm md:text-md text-pillar-text leading-7 md:leading-9">
             Applications for the Hackathon will remain open until{" "}
             <span className="font-bold">
               Thursday 29th October 2026 at 11:59pm WAT
