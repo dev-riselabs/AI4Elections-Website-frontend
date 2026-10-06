@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router";
+import { motion } from "framer-motion";
 
 const CTACyan: React.FC = () => {
   return (
@@ -8,7 +9,9 @@ const CTACyan: React.FC = () => {
       <div className=" md:pr-0">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left Side: Align items center */}
-          <div className="flex flex-col justify-center items-start px-5 md:px-4 md:pr-0 md:pl-25 py-8 md:py-14  space-y-5 md:space-y-3">
+          <motion.div initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.6 }} className="flex flex-col justify-center items-start px-5 md:px-4 md:pr-0 md:pl-25 py-8 md:py-14  space-y-5 md:space-y-3">
             <h2 className="text-gray-900 text-[7vw] md:text-[2.4vw] xl:text-[2.5vw] font-bold uppercase tracking-wide leading-tight ">
               STAY BEYOND THE <br /> HACKATHON.
             </h2>
@@ -28,7 +31,7 @@ const CTACyan: React.FC = () => {
                 <FaArrowRight />
               </Link>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side: Cutout of four people */}
           <div className="flex justify-center md:justify-end items-end self-end">

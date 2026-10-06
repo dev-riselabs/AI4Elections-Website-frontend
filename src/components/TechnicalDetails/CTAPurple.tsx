@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router";
+import { motion } from "framer-motion";
 
 const CTAPurple: React.FC = () => {
   return (
@@ -17,7 +18,9 @@ const CTAPurple: React.FC = () => {
           </div>
 
           {/* Right Side: Align items center */}
-          <div className="flex flex-col justify-center items-start py-8 px-5 md:px-4 md:pr-25 space-y-5 md:space-y-3 order-1 md:order-2">
+          <motion.div initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.6 }} className="flex flex-col justify-center items-start py-8 px-5 md:px-4 md:pr-25 space-y-5 md:space-y-3 order-1 md:order-2">
             <h2 className="text-white text-[7vw] md:text-[2.4vw] xl:text-[2.5vw] font-bold uppercase tracking-wide leading-tight">
               DON'T DEVELOP AI <br />
               FOR THE SAKE OF AI
@@ -37,7 +40,7 @@ const CTAPurple: React.FC = () => {
               Start your Application <FaArrowRight />
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

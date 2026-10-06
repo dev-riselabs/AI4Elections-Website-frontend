@@ -13,6 +13,7 @@ import ChallengeArea from "../components/Hackathon/ChallengeArea";
 import WhyParticipate from "../components/Hackathon/WhyParticipate";
 import WhatMatters from "../components/Hackathon/WhatMatters";
 import Eligibility from "../components/Hackathon/Eligibility";
+import Reveal from "../animation/Reveal";
 
 const subNavTabs = [
   { id: "technical-details", label: "Technical Briefs" },
@@ -65,13 +66,23 @@ function Homepage() {
         )}
         {activeTab === "hackathon" && (
           <>
+          <Reveal>
             <TheHackathon />
-            <WhyAi4Election />
-            <TheChallenge />
-            <ChallengeArea />
-            <WhyParticipate />
-            <Eligibility />
-            <WhatMatters />
+          </Reveal>
+            <Reveal>
+              <WhyAi4Election />
+            </Reveal>
+            <Reveal> <TheChallenge /></Reveal>
+            <Reveal><ChallengeArea /></Reveal>
+            <Reveal><WhyParticipate /></Reveal>
+            <Reveal><Eligibility /></Reveal>
+            <Reveal><WhatMatters /></Reveal>
+            
+           
+            
+            
+            
+            
           </>
         )}
       </div>

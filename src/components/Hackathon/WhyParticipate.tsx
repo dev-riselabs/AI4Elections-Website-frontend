@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const topics = [
   {
@@ -63,73 +64,106 @@ const topics = [
   },
 ];
 
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const item = {
+  hidden: {
+    opacity: 0,
+    x: -30,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 function WhyParticipate() {
-     const [activeTopic, setActiveTopic] = useState(0);
+  const [activeTopic, setActiveTopic] = useState(0);
   return (
     <section
       className="bg-center bg-cover bg-no-repeat px-4 md:px-25 py-10 flex flex-col gap-6 md:gap-10 "
       style={{ backgroundImage: "url('/challenge_area_bg.png')" }}
     >
-        <div className="flex flex-col gap-4 md:gap-6 items-center ">
+      <div className="flex flex-col gap-4 md:gap-6 items-center ">
         <h2 className="text-4xl md:text-heading-2 font-bold text-heading-text tracking-tight uppercase text-center">
-         Who should participate?
+          Who should participate?
         </h2>
         <p className="text-heading-text text-sm md:text-lg font-medium text-center ">
-         Electoral innovation requires more than technical expertise. It requires people who understand technology, data, 
-communities, institutions, research, policy and the realities of electoral processes.
+          Electoral innovation requires more than technical expertise. It
+          requires people who understand technology, data, communities,
+          institutions, research, policy and the realities of electoral
+          processes.
         </p>
       </div>
 
-       <section className="w-full  grid grid-cols-1 gap-4 md:grid-cols-[1fr_1.35fr]">
-   
-        
-
+      <section className="w-full  grid grid-cols-1 gap-4 md:grid-cols-[1fr_1.35fr]">
         {/* Topics */}
-        <div className="flex flex-col gap-3 justify-center">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex flex-col gap-3 justify-center"
+        >
           {topics.map((topic, index) => {
-            if (index === activeTopic) return <div key={topic.title} className="min-h-20 rounded-2xl bg-linear-to-t from-[#002E57] via-[#01B343] to-[#01B343] p-6 text-white">
-            <div className="flex items-start gap-4">
-              {/* Circle */}
-              <div className="mt-1 h-5 w-5 shrink-0 rounded-full border-2 border-white" />
-              <div className="flex flex-col gap-3">
-                <h2 className="font-robotoMono text-xl leading-tight md:text-2xl">
-                  {topic.title}
-                </h2>
+            if (index === activeTopic)
+              return (
+                <motion.div
+                  variants={item}
+                  key={topic.title}
+                  className="min-h-20 rounded-2xl bg-linear-to-t from-[#002E57] via-[#01B343] to-[#01B343] p-6 text-white"
+                >
+                  <div className="flex items-start gap-4">
+                    {/* Circle */}
+                    <div className="mt-1 h-5 w-5 shrink-0 rounded-full border-2 border-white" />
+                    <div className="flex flex-col gap-3">
+                      <h2 className="font-robotoMono text-xl leading-tight md:text-2xl">
+                        {topic.title}
+                      </h2>
 
-                {/* <p className="mt-5 font-robotoMono text-sm leading-relaxed">
+                      {/* <p className="mt-5 font-robotoMono text-sm leading-relaxed">
                   {topic.description}
                 </p> */}
-              </div>
-
-              
-            </div>
-          </div>;
+                    </div>
+                  </div>
+                </motion.div>
+              );
 
             return (
-              <button
+              <motion.button
+                variants={item}
                 key={topic.id}
                 type="button"
                 onClick={() => setActiveTopic(index)}
                 className="w-full rounded-2xl bg-white/10 backdrop-blur-xs backdrop-brightness-95 px-6 py-5 text-left font-robotoMono text-sm leading-relaxed shadow-sm transition hover:scale-101"
               >
                 {topic.title}
-              </button>
+              </motion.button>
             );
           })}
-        </div>
-     
+        </motion.div>
 
-      {/* Image */}
+        {/* Image */}
         <div className="overflow-hidden rounded-2xl">
           <img
             src="/participate_img.png"
             alt="AI robot"
             className="h-full w-full object-cover"
           />
-          </div>
+        </div>
+      </section>
     </section>
-    </section>
-  )
+  );
 }
 
-export default WhyParticipate
+export default WhyParticipate;

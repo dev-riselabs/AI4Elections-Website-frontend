@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 const topics = [
@@ -57,6 +58,29 @@ preference should be for publicly available, anonymised, aggregated or synthetic
   // },
 ];
 
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const item = {
+  hidden: {
+    opacity: 0,
+    x: 30,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 function ChallengeArea() {
     const [activeTopic, setActiveTopic] = useState(0);
   return (
@@ -86,9 +110,13 @@ function ChallengeArea() {
         </div>
 
         {/* Topics */}
-        <div className="flex flex-col gap-3 justify-center">
+        <motion.div  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+   className="flex flex-col gap-3 justify-center">
           {topics.map((topic, index) => {
-            if (index === activeTopic) return <div key={topic.title} className="min-h-57.5 rounded-2xl bg-linear-to-b from-purple-600 to-blue-600 p-6 text-white">
+            if (index === activeTopic) return <motion.div variants={item} key={topic.title} className="min-h-57.5 rounded-2xl bg-linear-to-b from-purple-600 to-blue-600 p-6 text-white">
             <div className="flex items-start gap-4">
               {/* Circle */}
               <div className="mt-1 h-5 w-5 shrink-0 rounded-full border-2 border-white" />
@@ -104,20 +132,21 @@ function ChallengeArea() {
 
               
             </div>
-          </div>;
+          </motion.div>;
 
             return (
-              <button
+              <motion.button
+              variants={item}
                 key={topic.id}
                 type="button"
                 onClick={() => setActiveTopic(index)}
                 className="w-full rounded-2xl bg-white/10 backdrop-blur-xs backdrop-brightness-95 px-6 py-5 text-left font-robotoMono text-sm leading-relaxed shadow-sm transition hover:bg-scale-101"
               >
                 {topic.title}
-              </button>
+              </motion.button>
             );
           })}
-        </div>
+        </motion.div>
     </section>
     </section>
   )
