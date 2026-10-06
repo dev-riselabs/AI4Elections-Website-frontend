@@ -113,7 +113,7 @@ const About: React.FC = () => {
             </p>
           </div>
           <motion.img
-            src="./technical_brief_img (2).png"
+            src="./technical_brief2.png"
             alt=""
             className="w-full h-full "
             initial={{
