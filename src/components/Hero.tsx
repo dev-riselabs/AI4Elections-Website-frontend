@@ -4,7 +4,7 @@ import CountdownTimer from "./CountDown";
 import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
-const heroSlides = ["/hero-img.png", "/hero-img.png", "/hero-img.png"];
+const heroSlides = ["/hero-img.png", "/flier_distribution.png", "/flier_distribution2.png", "/National Innovation Summit Panel.png"];
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -12,7 +12,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = window.setInterval(() => {
       setActiveSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
-    }, 5000);
+    }, 3000);
 
     return () => window.clearInterval(timer);
   }, []);
