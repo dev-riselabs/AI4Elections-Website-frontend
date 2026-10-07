@@ -167,7 +167,7 @@ export default function Sponsors() {
           {marqueeList.map((partner, index) => (
             <div
               key={`${partner.id}-${index}`}
-              className="relative flex flex-col items-center justify-center h-24 sm:h-28 px-4 md:px-8  transition-all duration-300 min-w-50 sm:min-w-57.5 cursor-pointer"
+              className="relative flex flex-col items-center justify-center h-30 sm:h-36 px-2 md:px-6  transition-all duration-300 min-w-50 sm:min-w-57.5 cursor-pointer"
             >
               <img
                 src={partner.src}
