@@ -1,9 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
 import CountdownTimer from "./CountDown";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { motion } from "framer-motion";
 
 export default function Hero() {
+  const navigate = useNavigate()
   return (
     <section className="w-full h-full  bg-[url('/hero-bg.png')]  bg-no-repeat bg-cover bg-center md:bg-center font-robotoMono p-2 md:p-6">
       {/* Top Bar (Navbar): Flex container with three distinct sections */}
@@ -90,19 +91,10 @@ export default function Hero() {
                 >
                   APPLY NOW ! <FaArrowRight />
                 </Link>
-                <motion.button
-                  whileHover={{
-                    scale: 1.05,
-                  }}
-                  whileTap={{
-                    scale: 0.95,
-                  }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 15,
-                  }}
+                <Link
+                  to='/community-page'
                   className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1vw] lg:text-md px-6 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
+                  
                 >
                   Join #AI4Elections Dev Hub{" "}
                   <motion.span
@@ -114,7 +106,7 @@ export default function Hero() {
                   >
                     <FaArrowRight />
                   </motion.span>
-                </motion.button>
+                </Link>
               </motion.div>
               <CountdownTimer />
             </motion.div>

@@ -84,7 +84,7 @@ function FormContainer() {
         <div ref={(element) => { stepRefs.current[3] = element; }} hidden={step !== 4}><StepFour handleNext={handleStep} applicationType={applicationType} /></div>
         <div ref={(element) => { stepRefs.current[4] = element; }} hidden={step !== 5}><StepFive isSubmitting={isSubmitting} /></div>
       </form>
-      {submitted && <ApplicationSubmittedModal />}
+      {submitted && <ApplicationSubmittedModal setSubmitted={setSubmitted}/>}
       <span className="text-lg md:text-2xl text-price-banner font-semibold text-center">
         {step}/5
       </span>

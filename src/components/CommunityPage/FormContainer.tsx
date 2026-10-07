@@ -242,7 +242,7 @@ function FormContainer() {
         </button>
       </div>
       </form>
-      {submitted && <CommunitySubmittedModal />}
+      {submitted && <CommunitySubmittedModal setSubmitted={setSubmitted} />}
     </div>
   );
 }

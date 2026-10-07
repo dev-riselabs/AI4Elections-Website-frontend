@@ -1,6 +1,18 @@
 import { IoArrowForwardSharp } from "react-icons/io5";
+import { useNavigate } from "react-router";
 
-function ApplicationSubmittedModal() {
+type ModalProps = {
+  setSubmitted : React.Dispatch<React.SetStateAction<boolean>>
+}
+
+function ApplicationSubmittedModal({setSubmitted} : ModalProps) {
+  const navigate = useNavigate()
+
+  function handleClick(){
+    setSubmitted(false)
+    navigate('/')
+  }
+
   return (
     <div className="fixed w-full h-screen bg-black/70 flex items-center justify-center px-4 z-30 inset-0">
       <div
@@ -30,7 +42,7 @@ function ApplicationSubmittedModal() {
             inclusion.
           </p>
         </div>
-        <button className="flex items-center gap-2 w-auto bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-8 py-3 justify-center">
+        <button onClick={handleClick} className="flex items-center gap-2 w-auto bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-8 py-3 justify-center">
           Explore #AI4Elections
           <IoArrowForwardSharp className="w-6 h-6" />
         </button>
