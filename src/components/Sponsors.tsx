@@ -12,7 +12,7 @@ const partners: Partner[] = [
    {
     id: 1,
     name: "Rise Networks",
-    src: "/risenetworks_logo.png",
+    src: "/risenetworks_logo_.png",
     alt: "Rise Networks Logo",
   },
   {
