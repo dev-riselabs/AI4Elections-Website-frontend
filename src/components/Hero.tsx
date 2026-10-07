@@ -1,9 +1,33 @@
-import { FaArrowRight } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import CountdownTimer from "./CountDown";
 import { Link } from "react-router";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+
+const heroSlides = ["/hero-img.png", "/hero-img.png", "/hero-img.png"];
 
 export default function Hero() {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  const showPreviousSlide = () => {
+    setActiveSlide(
+      (currentSlide) =>
+        (currentSlide - 1 + heroSlides.length) % heroSlides.length,
+    );
+  };
+
+  const showNextSlide = () => {
+    setActiveSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
+  };
+
   return (
     <section className="w-full h-full  bg-[url('/hero-bg.png')]  bg-no-repeat bg-cover bg-center md:bg-center font-robotoMono p-2 md:p-6">
       {/* Top Bar (Navbar): Flex container with three distinct sections */}
@@ -121,14 +145,60 @@ export default function Hero() {
 
             {/* Right Column */}
             <div className="col-span-5 xl:col-span-4 mt-4 p-2 md:mt-0 md:p-[3vw] md:pr-[4.5vw] xl:p-[0.1vw] ">
-              <motion.img
-                src="/hero-img.png"
-                alt="Hero People"
-                className="w-full max-w-md md:max-w-none object-contain align-center drop-shadow-2xl"
-                initial={{ opacity: 0, x: 80, scale: 0.95 }}
-                animate={{ opacity: 1, x: 0, scale: 1 }}
-                transition={{ duration: 0.9, delay: 0.3 }}
-              />
+              <div
+                className="relative w-full"
+                role="region"
+                aria-label="Hero image carousel"
+                aria-roledescription="carousel"
+              >
+                <div className="overflow-hidden">
+                  <AnimatePresence mode="wait" initial={false}>
+                    <motion.img
+                      key={activeSlide}
+                      src={heroSlides[activeSlide]}
+                      alt="Hero People"
+                      className="w-full max-w-md md:max-w-none object-contain align-center drop-shadow-2xl"
+                      initial={{ opacity: 0, x: 36 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -36 }}
+                      transition={{ duration: 0.35 }}
+                    />
+                  </AnimatePresence>
+                </div>
+                <button
+                  type="button"
+                  onClick={showPreviousSlide}
+                  aria-label="Show previous hero image"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white transition-colors hover:bg-black/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  <FaChevronLeft aria-hidden="true" />
+                </button>
+                <button
+                  type="button"
+                  onClick={showNextSlide}
+                  aria-label="Show next hero image"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white transition-colors hover:bg-black/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  <FaChevronRight aria-hidden="true" />
+                </button>
+                <div
+                  className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2"
+                  aria-label="Choose hero image"
+                >
+                  {heroSlides.map((_, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      onClick={() => setActiveSlide(index)}
+                      aria-label={`Show hero image ${index + 1}`}
+                      aria-current={activeSlide === index ? "true" : undefined}
+                      className={`h-2.5 w-2.5 rounded-full border border-white transition-colors ${
+                        activeSlide === index ? "bg-white" : "bg-white/40"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
