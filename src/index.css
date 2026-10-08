@@ -1,10 +1,16 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 @import "tailwindcss";
 
 @theme{
-  --font-robotoMono : "Roboto Mono", monospace;
-  --font-roboto: "Roboto";
+  /* --font-robotoMono : "Roboto Mono", monospace;
+  --font-roboto: "Roboto"; */
+  --font-robotoMono : "Hind", sans-serif;
+  /* --font-roboto: "Hind", sans-serif; */
+  --font-roboto: "Inter", sans-serif;
 
   
   /* Brand / Accent */

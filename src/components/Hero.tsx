@@ -4,10 +4,12 @@ import CountdownTimer from "./CountDown";
 import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
-
-
-
-const heroSlides = ["/hero-img.png", "/flier_distribution.png", "/flier_distribution2.png", "/National Innovation Summit Panel.png"];
+const heroSlides = [
+  "/hero-img.png",
+  "/flier_distribution.png",
+  "/flier_distribution2.png",
+  "/National Innovation Summit Panel.png",
+];
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -34,35 +36,53 @@ export default function Hero() {
   return (
     <section className="w-full h-full  bg-[url('/hero-bg.png')]  bg-no-repeat bg-cover bg-center md:bg-center font-robotoMono p-2 md:p-6">
       {/* Top Bar (Navbar): Flex container with three distinct sections */}
-      <header className="w-full ">
-        <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+      <header className="w-full grid grid-cols-[auto_auto] md:grid-cols-[auto_auto_auto] gap-5 justify-between md:gap-10">
+        <img
+          src="/risenetworks_footer_logo.png"
+          alt="AI6"
+          className="object-contain w-auto h-[20vw] md:h-[12vw] "
+        />
+        <img
+          src="/ai6-logo.png"
+          alt="AI6"
+          className="object-contain w-auto h-[20vw] md:h-[12vw] "
+        />
+        <button className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1">
+          Partner With Us <FaArrowRight />
+        </button>
+        {/* <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3"> */}
           {/* Left: Dark blue background with white text */}
-          <div className="flex items-center gap-2 md:pl-[7vw] lg:pl-[7.5vw] xl:pl-[10vw]  py-1.5  text-white text-[3.4vw] md:text-[1.4vw] xl:text-[1.2vw]  font-medium tracking-wide">
-            <span className="text-center">
+          {/* <div className="gap-2 md:pl-[7vw] lg:pl-[7.5vw] xl:pl-[10vw]  py-1.5  text-white text-[3.4vw] md:text-[1.4vw] xl:text-[1.2vw]  font-medium tracking-wide">
+            {/* <span className="text-center">
               <span className="text-accent-text">Application Deadline:</span>{" "}
               <br />
               Thursday 29th October 2026 at 11:59pm WAT
-            </span>
-          </div>
-
+            </span> 
+            <img
+              src="/risenetworks_footer_logo.png"
+              alt="AI6"
+              className="h-[25vw] object-contain"
+            />
+          </div> */}
           {/* Center: A white block containing the AI6 logo */}
-          <div className="flex gap-4 md:gap-10 xl:gap-30 md:items-center md:px-[2vw]">
-            <div className="bg-white px-3 md:px-2 py-1.5 rounded-lg shadow-sm flex items-center justify-center">
+          {/* <div className="w-full flex gap-4 md:gap-10 xl:gap-30 md:items-center md:px-[2vw]"> */}
+          {/* <div className="bg-white px-3 md:px-2 py-1.5 rounded-lg shadow-sm flex items-center justify-center">
               <img
                 src="/ai6-logo.png"
                 alt="AI6"
-                className="h-[8vw] object-contain"
+                className="h-[15vw] object-contain"
               />
-            </div>
+            </div> */}
 
-            {/* Right: An orange button */}
-            <div>
-              <button className="flex gap-4 md:gap-2 lg:gap-8 text-center items-center bg-accent-text hover:bg-orange-600 transition-colors duration-200 text-white text-[3vw] md:text-[1.3vw] xl:text-[1vw] font-semibold  px-4 md:px-[3vw] py-3 lg:py-4 rounded-lg shadow-sm hover:shadow cursor-pointer">
+          {/* Right: An orange button */}
+
+          {/* <div className="col-span-2">
+              <button className="flex gap-4 md:gap-2 lg:gap-8 text-center items-center bg-accent-text hover:bg-orange-600 transition-colors duration-200 text-white text-[4vw] md:text-[1.3vw] xl:text-[1vw] font-semibold  px-4 md:px-[3vw] py-3 lg:py-4 rounded-lg shadow-sm hover:shadow cursor-pointer">
                 Partner With Us <FaArrowRight />
               </button>
-            </div>
-          </div>
-        </div>
+            </div> */}
+          {/* </div> */}
+        {/* </div> */}
       </header>
 
       {/* Main Hero Section: Deep blue-to-purple gradient with dot/grid overlay */}
@@ -80,21 +100,29 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="text-[10vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-4 md:mb-0 xl:mb-6 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
+                className="text-[10vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-1 md:mb-0 xl:mb-6 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
               >
                 <span className="bg-linear-to-b from-brand-blue to-brand-purple bg-clip-text text-transparent">
                   #AI4ELECTIONS
                 </span>{" "}
                 <br /> HACKATHON 2026
               </motion.h1>
+              <motion.div className="px-2 md:px-6 lg:pl-10 mb-3">
+                <span className="text-[4.5vw]">
+                  <span className="text-accent-text">
+                    Application Deadline:
+                  </span>{" "} <br />
+                  Thursday 29th October 2026 at 11:59pm WAT
+                </span>
+              </motion.div>
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.4 }}
-                className="text-xs md:text-[1.3vw] text-white leading-[1.8] p-2 px-3 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4"
+                className="text-xs md:text-[1.3vw] text-white text-justify leading-[1.8] p-2 px-3 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4"
               >
-                The #AI4Elections Hackathon is a national, multidisciplinary,
+                {/* The #AI4Elections Hackathon is a national, multidisciplinary,
                 nonpartisan electoral innovation project created by Rise
                 Networks to mobilise and connect Nigeria's technology ecosystem,
                 electoral experts, academic institutions, young innovators,
@@ -102,7 +130,16 @@ export default function Hero() {
                 practical, safe and responsible artificial intelligence and
                 emerging technologies tools, solutions, platforms and
                 applications for electoral processes, integrity, transparency,
-                inclusion and democratic participation in Nigeria.
+                inclusion and democratic participation in Nigeria. */}
+                The #AI4Elections Hackathon is a national, multidisciplinary,
+                nonpartisan electoral innovation project created by Rise
+                Networks to mobilise and connect Nigeria’s technology ecosystem,
+                electoral experts, academic institutions, young innovators,
+                researchers, developers and civil society to develop usable,
+                practical, safe and responsible artificial intelligence and
+                emerging technology tools, solutions, platforms and applications
+                for electoral processes, integrity, transparency, inclusion and
+                democratic participation in Nigeria.
               </motion.p>
 
               <motion.div
@@ -118,9 +155,8 @@ export default function Hero() {
                   APPLY NOW ! <FaArrowRight />
                 </Link>
                 <Link
-                  to='/community-page'
-                  className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1vw] lg:text-md px-6 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
-                  
+                  to="/community-page"
+                  className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1vw] lg:text-md px-10 md:px-8 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
                 >
                   Join #AI4Elections Dev Hub{" "}
                   <motion.span
