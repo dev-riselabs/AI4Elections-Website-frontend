@@ -5,11 +5,11 @@ import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
 const heroSlides = [
-  "/technical_brief2.png",
+  "/hero_technical_brief.png",
   "/hero-img.png",
   "/flier_distribution.png",
   "/flier_distribution2.png",
-  "/National Innovation Summit Panel.png",
+  // "/National Innovation Summit Panel.png",
 ];
 
 export default function Hero() {
@@ -40,16 +40,16 @@ export default function Hero() {
       <header className="w-full grid grid-cols-[auto_auto] md:grid-cols-[auto_auto_auto] gap-5 justify-between md:gap-10">
         <a href="https://risenetworks.org" aria-label="Rise Networks website">
           <img
-            src="/risenetworks_footer_logo.png"
+            src="/risenetworks_header_logo.png"
             alt="Rise Networks"
-            className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
+            className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] "
           />
         </a>
         <a href="/" aria-label="AI4Elections homepage">
           <img
             src="/ai6-logo.png"
             alt="AI4Elections"
-            className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
+            className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] "
           />
         </a>
         <button className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1">
@@ -91,15 +91,15 @@ export default function Hero() {
       </header>
 
       {/* Main Hero Section: Deep blue-to-purple gradient with dot/grid overlay */}
-      <div className="relative max-w-7xl mx-auto text-white pt-12 md:pt-6 pb-8  overflow-hidden">
+      <div className="relative lg:max-w-7xl mx-auto text-white pt-12 md:pt-6 pb-8  overflow-hidden">
         <div className="relative z-10 ">
-          <div className="grid grid-cols-1 md:grid-cols-12 md:gap-x-6 lg:pt-5 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-12 lg:gap-x-8 xl:gap-x-10 lg:pt-5 items-center">
             {/* Left Column */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="col-span-7 md:pl-8 xl:col-span-8 md:py-2 space-y-8 "
+              className="col-span-7 md:pl-7 xl:col-span-8 md:py-2 space-y-8 "
             >
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
@@ -117,7 +117,7 @@ export default function Hero() {
                   <span className="text-accent-text">
                     Application Deadline:
                   </span>{" "} <br />
-                  Thursday 5th November 2026 at 11:59pm WAT
+                  Thursday 6th November 2026 at 11:59pm WAT
                 </span>
               </motion.div>
 
@@ -125,7 +125,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.4 }}
-                className="text-xs md:text-[1.3vw] text-white text-justify leading-[1.8] p-2 px-3 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4"
+                className="text-xs md:text-[1.15vw] text-white text-justify leading-[1.8] p-2 px-3 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4"
               >
                 {/* The #AI4Elections Hackathon is a national, multidisciplinary,
                 nonpartisan electoral innovation project created by Rise

@@ -20,16 +20,16 @@ function Header() {
       /> */}
       <a href="https://risenetworks.org" aria-label="Rise Networks website">
         <img
-          src="/risenetworks_footer_logo.png"
+          src="/risenetworks_header_logo.png"
           alt="Rise Networks"
-          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw]"
+          className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] shadow-2xs"
         />
       </a>
       <a href="/" aria-label="AI4Elections homepage">
         <img
           src="/ai6-logo.png"
           alt="AI4Elections"
-          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
+          className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] shadow-2xs"
         />
       </a>
 
