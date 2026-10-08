@@ -81,7 +81,7 @@ const About: React.FC = () => {
             explore how responsible AI and digital innovation can contribute to
             more transparent, inclusive and accountable elections.
           </p>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 ">
             <p className="text-justify  text-sm md:text-md text-pillar-text leading-7 md:leading-9">
               Led by{" "}
               <Link
@@ -115,7 +115,7 @@ const About: React.FC = () => {
           <motion.img
             src="./technical_brief2.png"
             alt=""
-            className="w-full h-full "
+            className="w-full xl:w-[26vw] xl:ml-20"
             initial={{
               opacity: 0,
               scale: 0.95,
