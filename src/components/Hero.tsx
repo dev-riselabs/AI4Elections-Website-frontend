@@ -37,16 +37,20 @@ export default function Hero() {
     <section className="w-full h-full  bg-[url('/hero-bg.png')]  bg-no-repeat bg-cover bg-center md:bg-center font-robotoMono p-2 md:p-6">
       {/* Top Bar (Navbar): Flex container with three distinct sections */}
       <header className="w-full grid grid-cols-[auto_auto] md:grid-cols-[auto_auto_auto] gap-5 justify-between md:gap-10">
-        <img
-          src="/risenetworks_footer_logo.png"
-          alt="AI6"
-          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
-        />
-        <img
-          src="/ai6-logo.png"
-          alt="AI6"
-          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
-        />
+        <a href="https://risenetworks.org" aria-label="Rise Networks website">
+          <img
+            src="/risenetworks_footer_logo.png"
+            alt="Rise Networks"
+            className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
+          />
+        </a>
+        <a href="/" aria-label="AI4Elections homepage">
+          <img
+            src="/ai6-logo.png"
+            alt="AI4Elections"
+            className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
+          />
+        </a>
         <button className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1">
           Partner With Us <FaArrowRight />
         </button>

@@ -18,16 +18,20 @@ function Header() {
         alt=""
         className=" object-contain w-auto h-[25vw] md:h-auto "
       /> */}
-      <img
+      <a href="https://risenetworks.org" aria-label="Rise Networks website">
+        <img
           src="/risenetworks_footer_logo.png"
-          alt="AI6"
+          alt="Rise Networks"
           className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
         />
+      </a>
+      <a href="/" aria-label="AI4Elections homepage">
         <img
           src="/ai6-logo.png"
-          alt="AI6"
+          alt="AI4Elections"
           className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
         />
+      </a>
 
       <a
         href="/Concept_Doc_%23AI4Elections_Hackathon_2026_to_2027.pdf"
