@@ -15,7 +15,7 @@ function StepThree({ handleNext }: StepThreeProps) {
       <div className="flex flex-col gap-4">
         {/* Your Skills */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-xl md:text-2xl text-price-banner">Your Idea</h3>
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">Your Idea</h3>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2 ">
               <label

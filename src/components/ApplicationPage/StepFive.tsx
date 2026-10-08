@@ -21,7 +21,7 @@ function StepFive({ isSubmitting }: StepFiveProps) {
       <div className="flex flex-col gap-6">
         {/* Applying as an Individual */}
         <div className="flex flex-col gap-6 pb-3">
-          <h3 className="text-xl md:text-2xl text-price-banner">
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">
             Responsible Participation *
           </h3>
           <div className="flex flex-col gap-6">
@@ -38,7 +38,7 @@ function StepFive({ isSubmitting }: StepFiveProps) {
 
         {/* Key commitments */}
         <div className="flex flex-col gap-6 pb-3">
-          <h3 className="text-xl md:text-2xl text-price-banner">Key commitments *</h3>
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">Key commitments *</h3>
           <div className="flex flex-col gap-6">
             <p className="text-sm md:text-base">
               By participating, you agree that you will not:

@@ -17,7 +17,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
       <div className="flex flex-col gap-4">
         {/* personal information */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-xl md:text-2xl text-price-banner">Personal Information</h3>
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">Personal Information</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col gap-2">
               <label
@@ -110,7 +110,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
         <div className="max-w-147.25 bg-divider w-full h-0.5"></div>
         {/* background */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-xl md:text-2xl text-price-banner">Your Background</h3>
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">Your Background</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col gap-2 md:col-span-2">
               <label

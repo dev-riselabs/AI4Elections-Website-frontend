@@ -11,7 +11,7 @@ function StepTwo({ handleNext }: StepTwoProps) {
       <div className="flex flex-col gap-4">
         {/* Your Skills */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-xl md:text-2xl text-price-banner">Your Skills</h3>
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">Your Skills</h3>
           <div className="flex flex-col gap-4"><div className="flex flex-col gap-2 ">
               <label
                 htmlFor=""
@@ -38,7 +38,7 @@ function StepTwo({ handleNext }: StepTwoProps) {
 
         {/* Your Interest */}
         <div className="flex flex-col gap-4">
-          <h3 className="text-xl md:text-2xl text-price-banner">Your Interest</h3>
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">Your Interest</h3>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <label

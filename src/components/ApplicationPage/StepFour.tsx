@@ -18,7 +18,7 @@ function StepFour({ handleNext, applicationType }: StepFourProps) {
         {applicationType === "Individual" && <>
         {/* Applying as an Individual */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-xl md:text-2xl text-price-banner">
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">
             Applying as an Individual
           </h3>
           <div className="flex flex-col gap-6">
@@ -64,7 +64,7 @@ function StepFour({ handleNext, applicationType }: StepFourProps) {
 
         {/* Applying as an existing team */}
         {(applicationType === "Team" || applicationType === "Organization") && <div className="flex flex-col gap-6">
-          <h3 className="text-xl md:text-2xl text-price-banner">
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">
             Applying as an existing team
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -147,7 +147,7 @@ function StepFour({ handleNext, applicationType }: StepFourProps) {
 
         {/* Accessibility & Participation needs */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-xl md:text-2xl text-price-banner">
+          <h3 className="text-xl md:text-2xl text-price-banner uppercase font-semibold mb-2">
             Accessibility & Participation needs
           </h3>
           <div className="flex flex-col gap-6">
