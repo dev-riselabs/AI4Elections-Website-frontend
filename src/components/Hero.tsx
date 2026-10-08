@@ -5,6 +5,7 @@ import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
 const heroSlides = [
+  "/technical_brief2.png",
   "/hero-img.png",
   "/flier_distribution.png",
   "/flier_distribution2.png",
