@@ -102,11 +102,11 @@ const About: React.FC = () => {
               <span className="font-bold">
                 The initiative is built around three connected components:
               </span>{" "}
-              the #AI4Elections Hackathon, the #AI4Elections Innovation Lab, and
+              the #AI4Elections Hackathon, the #AI4Elections Development Hub, and
               the #AI4Elections Community of Practice. The Hackathon provides a
               platform for teams to develop innovative solutions across key
               electoral challenge areas. Selected projects may progress into the
-              Innovation Lab for further technical development, validation and
+              Development Hub for further technical development, validation and
               mentorship, while the Community of Practice provides an ongoing
               network for research, collaboration, learning and knowledge
               exchange.

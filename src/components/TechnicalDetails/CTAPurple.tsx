@@ -18,9 +18,12 @@ const CTAPurple: React.FC = () => {
           </div>
 
           {/* Right Side: Align items center */}
-          <motion.div initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.6 }} className="flex flex-col justify-center items-start py-8 px-5 md:px-4 md:pr-25 space-y-5 md:space-y-3 order-1 md:order-2">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="flex flex-col justify-center items-start py-8 px-5 md:px-4 md:pr-25 space-y-5 md:space-y-3 order-1 md:order-2"
+          >
             <h2 className="text-white text-[7vw] md:text-[2.4vw] xl:text-[2.5vw] font-bold uppercase tracking-wide leading-tight">
               DON'T DEVELOP AI <br />
               FOR THE SAKE OF AI
@@ -28,16 +31,19 @@ const CTAPurple: React.FC = () => {
 
             <p className="text-white/95 text-sm md:text-[1.4vw] xl:text-[1.4vw] leading-7 md:leading-9">
               Start with the problem. Understand the people. Examine the
-              context. Then determine whether AI is actually the right tool for
-              the solution.
+              context. Then determine how AI can contribute to the right tool
+              for the solution.
             </p>
 
             <div className="pt-2">
               {/* <button className="flex gap-4 items-center bg-special-green-icon hover:bg-green-600 transition-all duration-200 text-white text-xs md:text-[1.2vw] px-4 md:px-5 py-3 rounded-lg font-semibold shadow-lg hover:shadow-green-500/30 hover:-translate-y-0.5 cursor-pointer">
                 Start your Application <FaArrowRight />
               </button> */}
-              <Link to="/application" className="flex gap-4 items-center bg-special-green-icon hover:bg-green-600 transition-all duration-200 text-white text-xs md:text-[1.2vw] px-4 md:px-5 py-3 rounded-lg font-semibold shadow-lg hover:shadow-green-500/30 hover:-translate-y-0.5 cursor-pointer">
-              Start your Application <FaArrowRight />
+              <Link
+                to="/application"
+                className="flex gap-4 items-center bg-special-green-icon hover:bg-green-600 transition-all duration-200 text-white text-xs md:text-[1.2vw] px-4 md:px-5 py-3 rounded-lg font-semibold shadow-lg hover:shadow-green-500/30 hover:-translate-y-0.5 cursor-pointer"
+              >
+                Start your Application <FaArrowRight />
               </Link>
             </div>
           </motion.div>

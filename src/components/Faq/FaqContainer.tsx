@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import CTACyan from "../TechnicalDetails/CTACyan";
 import CTAPurple from "../TechnicalDetails/CTAPurple";
 
@@ -49,9 +50,13 @@ function FaqContainer() {
               </h4>
               <p className="text-xs md:text-base text-header-text">
                 The initiative is organised by{" "}
-                <span className="text-accent-text">Rise Networks</span> with the
-                support of NITDA, NCC, Huawei, INEC and several other private
-                organizations and public institutions.
+                <Link
+                  to="https://risenetworks.org"
+                  className="text-accent-text font-bold"
+                >
+                  Rise Networks
+                </Link>{" "}
+                in partnership with NITDA, NCC, NITHUB, CLEEN FOUNDATION INEC and several other private and public institutions.
               </p>
             </div>
           </div>
@@ -78,7 +83,7 @@ function FaqContainer() {
             <div className="flex flex-col gap-4 md:gap-6">
               <h4 className="text-base md:text-lg text-faq-heading font-bold">
                 Do I need to be a computer science student or professional
-                developer
+                developer?
               </h4>
               <p className="text-xs md:text-base text-header-text">
                 No. The challenge areas are multidisciplinary. Applicants with
@@ -296,8 +301,13 @@ function FaqContainer() {
                 Will the winning solutions receive further support?
               </h4>
               <p className="text-xs md:text-base text-header-text">
-                <span className="text-accent-text">Rise Networks</span> will
-                develop a post-hackathon pathway for promising solutions,
+                <Link
+                  to="https://risenetworks.org"
+                  className="text-accent-text font-bold"
+                >
+                  Rise Networks
+                </Link>{" "}
+                will develop a post-hackathon pathway for promising solutions,
                 potentially including mentorship, refinement, incubation and
                 opportunities for responsible piloting. At the end of the
                 Hackathon, Rise Networks will set up the #AI4Elections Dev Hub
@@ -343,8 +353,8 @@ function FaqContainer() {
               </h4>
               <p className="text-xs md:text-base text-header-text">
                 The kick off date is{" "}
-                <span className="font-bold">8th October</span> and the deadline
-                is <span className="font-bold">29th October 2026</span>, at{" "}
+                <span className="font-bold">16th October</span> and the deadline
+                is <span className="font-bold">6th November 2026</span>, at{" "}
                 <span className="font-bold">11:59 PM West Africa Time</span>.
                 Applicants should check the official application page for the
                 final confirmed deadline
@@ -455,7 +465,12 @@ function FaqContainer() {
 
         <div className="flex flex-col gap-4 w-full px-4 md:px-14">
           <p className="text-sm md:text-lg faq-heading font-semibold">
-            <span className="text-accent-text">Application Link</span> -
+            <Link
+              to="/application"
+              className="text-accent-text font-bold"
+            >
+              Application Link
+            </Link> -
             ai4elections.risenetworks.org
           </p>
           <p className="text-xs md:text-base text-header-text">

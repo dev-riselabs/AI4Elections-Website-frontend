@@ -29,12 +29,12 @@ const partners: Partner[] = [
   //   src: "/ai4elections_logo.png",
   //   alt: "AI4Elections Logo",
   // },
-  {
-    id: 3,
-    name: "NCC Nigeria",
-    src: "/ncc_logo.png",
-    alt: "NCC Logo",
-  },
+  // {
+  //   id: 3,
+  //   name: "NCC Nigeria",
+  //   src: "/ncc_logo.png",
+  //   alt: "NCC Logo",
+  // },
   {
     id: 4,
     name: "INEC Nigeria",
@@ -59,8 +59,14 @@ const partners: Partner[] = [
     src: "/nithub_logo.png",
     alt: "Nithub Logo",
   },
-   {
+  {
     id: 8,
+    name: "Citad",
+    src: "/ai4elections_citad.png",
+    alt: "Citad Logo",
+  },
+   {
+    id: 9,
     name: "Tap Initiative",
     src: "/tab_logo.png",
     alt: "Tap initiative Logo",

@@ -52,12 +52,17 @@ export default function Hero() {
             className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] "
           />
         </a>
-        <button className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1">
-          Partner With Us <FaArrowRight />
-        </button>
+
+        <a
+          href="The link to the GitHub:
+https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/03_onboarding/onboarding_guide.md"
+          className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1"
+        >
+          Download Resources <FaArrowRight />
+        </a>
         {/* <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3"> */}
-          {/* Left: Dark blue background with white text */}
-          {/* <div className="gap-2 md:pl-[7vw] lg:pl-[7.5vw] xl:pl-[10vw]  py-1.5  text-white text-[3.4vw] md:text-[1.4vw] xl:text-[1.2vw]  font-medium tracking-wide">
+        {/* Left: Dark blue background with white text */}
+        {/* <div className="gap-2 md:pl-[7vw] lg:pl-[7.5vw] xl:pl-[10vw]  py-1.5  text-white text-[3.4vw] md:text-[1.4vw] xl:text-[1.2vw]  font-medium tracking-wide">
             {/* <span className="text-center">
               <span className="text-accent-text">Application Deadline:</span>{" "}
               <br />
@@ -69,9 +74,9 @@ export default function Hero() {
               className="h-[25vw] object-contain"
             />
           </div> */}
-          {/* Center: A white block containing the AI6 logo */}
-          {/* <div className="w-full flex gap-4 md:gap-10 xl:gap-30 md:items-center md:px-[2vw]"> */}
-          {/* <div className="bg-white px-3 md:px-2 py-1.5 rounded-lg shadow-sm flex items-center justify-center">
+        {/* Center: A white block containing the AI6 logo */}
+        {/* <div className="w-full flex gap-4 md:gap-10 xl:gap-30 md:items-center md:px-[2vw]"> */}
+        {/* <div className="bg-white px-3 md:px-2 py-1.5 rounded-lg shadow-sm flex items-center justify-center">
               <img
                 src="/ai6-logo.png"
                 alt="AI6"
@@ -79,14 +84,14 @@ export default function Hero() {
               />
             </div> */}
 
-          {/* Right: An orange button */}
+        {/* Right: An orange button */}
 
-          {/* <div className="col-span-2">
+        {/* <div className="col-span-2">
               <button className="flex gap-4 md:gap-2 lg:gap-8 text-center items-center bg-accent-text hover:bg-orange-600 transition-colors duration-200 text-white text-[4vw] md:text-[1.3vw] xl:text-[1vw] font-semibold  px-4 md:px-[3vw] py-3 lg:py-4 rounded-lg shadow-sm hover:shadow cursor-pointer">
                 Partner With Us <FaArrowRight />
               </button>
             </div> */}
-          {/* </div> */}
+        {/* </div> */}
         {/* </div> */}
       </header>
 
@@ -105,19 +110,20 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="text-[9vw]  md:shadow-0 md:text-[4.2vw]  font-bold text-white mb-1 md:mb-0 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
+                className="text-[6.7vw]  md:shadow-0 md:text-[3.2vw] lg:text-[3.8vw]  font-bold mb-1 md:mb-0 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
               >
                 <span className="bg-linear-to-b from-brand-blue to-brand-purple bg-clip-text text-transparent">
-                  #AI4ELECTIONS
-                </span>{" "}
-                <br /> HACKATHON 2026
+                  #AI4ELECTIONS HACKATHON
+                </span>
               </motion.h1>
               <motion.div className="px-2 md:px-6 lg:pl-10 mb-3">
-                <span className="text-[4.5vw] md:text-body-small">
-                  <span className="text-accent-text">
+                <span className="text-[4vw] md:text-sm">
+                  <span className="text-accent-text font-semibold">
                     Application Deadline:
-                  </span>{" "} <br />
-                  Thursday 6th November 2026 at 11:59pm WAT
+                  </span>
+                  <span className="text-accent-yellow">
+                    Thursday 6th November 2026 at 11:59pm WAT
+                  </span>
                 </span>
               </motion.div>
 

@@ -11,7 +11,7 @@ function Header() {
       {/* <img
         src="/risenetworks_footer_logo.png"
         alt=""
-        className="w-auto h-[25vw] md:h-auto "
+        className="w-auto h-[25vw] md:h-auto"
       />
       <img
         src="/ai4electionlogo.png"

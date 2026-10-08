@@ -1,6 +1,6 @@
 const pillars = [
     {title: 'THE HACKATHON', description: 'The national competition brings participants together to identify clearly defined electoral challenges, form multidisciplinary teams, develop solutions, test prototypes and demonstrate their work.'},
-    {title: 'THE INNOVATION LAB', description: 'Selected teams will have the opportunity to continue developing their solutions through a structured post-hackathon incubation programme.'},
+    {title: 'THE DEVELOPMENT HUB', description: 'Selected teams will have the opportunity to continue developing their solutions through a structured post-hackathon incubation programme.'},
     {title: 'THE COMMUNITY OF PRACTICE', description: 'The #AI4Elections Community of Practice is designed to become a sustained national network connecting innovators, researchers, developers, universities, electoral experts, civic organisations, mentors and technology partners working on responsible AI and electoral technology.'},
 ]
 
