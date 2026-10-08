@@ -3,8 +3,8 @@
 function Hero() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-25">
-      <div className="flex flex-col gap-3 md:gap-0 justify-center max-w-143">
-        <h1 className="text-faq-heading text-[9vw] md:text-[3.9vw] font-bold uppercase leading-10">
+      <div className="flex flex-col gap-3 md:gap-0 justify-center max-w-150">
+        <h1 className="text-faq-heading text-[9vw] md:text-[2.4vw] font-bold uppercase leading-14">
           #ai4elections hackathon 2026
         </h1>
         <div className="text-[4.2vw] md:text-[1.5vw] md:mb-4 font-bold text-heading-text">
