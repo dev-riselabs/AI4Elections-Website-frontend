@@ -9,7 +9,7 @@ function Hero() {
         </h1>
         <div className="text-[4.2vw] md:text-[1.3vw]  font-bold text-heading-text">
         <span className="text-accent-text">Application Deadline:</span>&nbsp; 5th
-        November,2026
+        November, 2026
       </div>
         {/* <motion.div className="">
                 <span>

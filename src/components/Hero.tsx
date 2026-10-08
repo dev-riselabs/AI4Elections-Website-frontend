@@ -112,7 +112,7 @@ export default function Hero() {
                   <span className="text-accent-text">
                     Application Deadline:
                   </span>{" "} <br />
-                  Thursday 29th October 2026 at 11:59pm WAT
+                  Thursday 5th November 2026 at 11:59pm WAT
                 </span>
               </motion.div>
 

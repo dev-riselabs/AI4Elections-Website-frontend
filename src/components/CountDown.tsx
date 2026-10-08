@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-const EVENT_MONTH = 9; // June (0-based)
-const START_DAY = 31;
+const EVENT_MONTH = 10; // June (0-based)
+const START_DAY = 5;
 // const END_DAY = 10;
 
 const getTargetDate = () => {
