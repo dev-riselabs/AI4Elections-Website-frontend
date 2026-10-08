@@ -22,7 +22,7 @@ function Header() {
         <img
           src="/risenetworks_footer_logo.png"
           alt="Rise Networks"
-          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
+          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw]"
         />
       </a>
       <a href="/" aria-label="AI4Elections homepage">
