@@ -100,7 +100,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="text-[10vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-1 md:mb-0 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
+                className="text-[9vw]  md:shadow-0 md:text-[4.2vw]  font-bold text-white mb-1 md:mb-0 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
               >
                 <span className="bg-linear-to-b from-brand-blue to-brand-purple bg-clip-text text-transparent">
                   #AI4ELECTIONS
