@@ -100,7 +100,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="text-[10vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-1 md:mb-0 xl:mb-6 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
+                className="text-[10vw]  md:shadow-0 md:text-[4.5vw]  font-bold text-white mb-1 md:mb-0 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
               >
                 <span className="bg-linear-to-b from-brand-blue to-brand-purple bg-clip-text text-transparent">
                   #AI4ELECTIONS
@@ -108,7 +108,7 @@ export default function Hero() {
                 <br /> HACKATHON 2026
               </motion.h1>
               <motion.div className="px-2 md:px-6 lg:pl-10 mb-3">
-                <span className="text-[4.5vw]">
+                <span className="text-[4.5vw] md:text-body-small">
                   <span className="text-accent-text">
                     Application Deadline:
                   </span>{" "} <br />
