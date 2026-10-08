@@ -40,12 +40,12 @@ export default function Hero() {
         <img
           src="/risenetworks_footer_logo.png"
           alt="AI6"
-          className="object-contain w-auto h-[20vw] md:h-[12vw] "
+          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
         />
         <img
           src="/ai6-logo.png"
           alt="AI6"
-          className="object-contain w-auto h-[20vw] md:h-[12vw] "
+          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
         />
         <button className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1">
           Partner With Us <FaArrowRight />
@@ -86,9 +86,9 @@ export default function Hero() {
       </header>
 
       {/* Main Hero Section: Deep blue-to-purple gradient with dot/grid overlay */}
-      <div className="relative max-w-7xl mx-auto text-white pt-12 md:pt-6 pb-8 overflow-hidden">
+      <div className="relative max-w-7xl mx-auto text-white pt-12 md:pt-6 pb-8  overflow-hidden">
         <div className="relative z-10 ">
-          <div className="grid grid-cols-1 md:grid-cols-12 md:gap-0 lg:pt-5 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-12 md:gap-x-6 lg:pt-5 items-center">
             {/* Left Column */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}

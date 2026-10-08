@@ -21,12 +21,12 @@ function Header() {
       <img
           src="/risenetworks_footer_logo.png"
           alt="AI6"
-          className="object-contain w-auto h-[20vw] md:h-[12vw]"
+          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
         />
         <img
           src="/ai6-logo.png"
           alt="AI6"
-          className="object-contain w-auto h-[20vw] md:h-[12vw]"
+          className="object-contain w-auto h-[20vw] md:h-[12vw] lg:h-[9vw] "
         />
 
       <a
