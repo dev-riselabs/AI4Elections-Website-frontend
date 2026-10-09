@@ -2,7 +2,6 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 import CTACyan from "../TechnicalDetails/CTACyan";
 import CTAPurple from "../TechnicalDetails/CTAPurple";
 
-
 function Download() {
   return (
     <>
@@ -12,14 +11,18 @@ function Download() {
             Download the Concept Document
           </h3>
           <p className="text-paragraph-text text-sm md:text-lg font-medium text-center">
-            Explore the full #AI4Elections concept document to learn more about
+            {/* Explore the full #AI4Elections concept document to learn more about
             the initiative, its objectives, challenge areas, programme
+            structure, participation, safeguards, judging criteria and long-term
+            vision. */}
+            We encourage the full #AI4Elections concept document to learn more
+            about the initiative, its objectives, challenge areas, programme
             structure, participation, safeguards, judging criteria and long-term
             vision.
           </p>
         </div>
         <a
-          href="/Concept_Doc_%23AI4Elections_Hackathon_2026_to_2027.pdf"
+          href="#"
           download
           className="flex items-center gap-2 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-2 md:px-6 py-3 justify-center"
         >

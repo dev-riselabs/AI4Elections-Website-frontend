@@ -110,7 +110,7 @@ https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="text-[6.7vw]  md:shadow-0 md:text-[3.2vw] lg:text-[3.8vw]  font-bold mb-1 md:mb-0 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
+                className="text-[6.7vw]  md:shadow-0 md:text-[3.2vw] lg:text-[3.4vw]  font-bold mb-1 md:mb-0 tracking-tight leading-tight px-2 md:px-6 lg:pl-10"
               >
                 <span className="bg-linear-to-b from-brand-blue to-brand-purple bg-clip-text text-transparent">
                   #AI4ELECTIONS HACKATHON
@@ -119,10 +119,9 @@ https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/
               <motion.div className="px-2 md:px-6 lg:pl-10 mb-3">
                 <span className="text-[4vw] md:text-sm">
                   <span className="text-accent-text font-semibold">
-                    Application Deadline:
+                    Application Deadline: 
                   </span>
-                  <span className="text-accent-yellow">
-                    Thursday 6th November 2026 at 11:59pm WAT
+                  <span className="text-accent-yellow"> Thursday 6th November 2026 at 11:59pm WAT
                   </span>
                 </span>
               </motion.div>
