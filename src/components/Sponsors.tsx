@@ -24,10 +24,10 @@ const partners: Partner[] = [
  
   // {
   //   id: 3,
-  //   name: "AI4Elections",
+  //   name: "#AI4Elections",
   //   role: "Initiative Host",
   //   src: "/ai4elections_logo.png",
-  //   alt: "AI4Elections Logo",
+  //   alt: "#AI4Elections Logo",
   // },
   // {
   //   id: 3,

@@ -25,16 +25,16 @@ function Header() {
           className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] shadow-2xs"
         />
       </a>
-      <a href="/" aria-label="AI4Elections homepage">
+      <a href="/" aria-label="#AI4Elections homepage">
         <img
           src="/ai6-logo.png"
-          alt="AI4Elections"
+          alt="#AI4Elections"
           className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] shadow-2xs"
         />
       </a>
 
       <a
-        href="/Concept_Doc_%23AI4Elections_Hackathon_2026_to_2027.pdf"
+        href="#"
         download
         className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center col-span-2 md:col-span-1"
       >

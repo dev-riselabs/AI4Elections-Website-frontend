@@ -31,7 +31,7 @@ function OfficialCommunication() {
           </li>
         </ul>
         <p className="text-xs md:text-base text-header-text leading-8">
-          By registering for or participating in the AI4Elections Hackathon
+          By registering for or participating in the #AI4Elections Hackathon
           2026-2027, participants acknowledge that they have read, understood
           and agreed to these Terms and Conditions and the applicable
           Competition rules.

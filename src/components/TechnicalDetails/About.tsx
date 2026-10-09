@@ -50,7 +50,7 @@ const About: React.FC = () => {
         {/* <div className="md:col-span-5 flex">
               <div className="w-full  rounded-2xl border border-gray-200 shadow-2xl flex items-center justify-center min-h-[300px] text-center transform hover:-translate-y-1 transition-transform duration-300">
                 <h3 className="text-orange-500 font-bold text-xl md:text-2xl uppercase tracking-wider leading-snug">
-                  AI4ELECTIONS HACKATHON Fly DESIGN
+                  #AI4ELECTIONS HACKATHON Fly DESIGN
                 </h3>
                 <img src="/#AI4ELECTIONS HACKATHON DESIGN.png" alt="" className="w-full h-full"/>
               </div>

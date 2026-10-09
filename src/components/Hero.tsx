@@ -45,10 +45,10 @@ export default function Hero() {
             className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] "
           />
         </a>
-        <a href="/" aria-label="AI4Elections homepage">
+        <a href="/" aria-label="#AI4Elections homepage">
           <img
             src="/ai6-logo.png"
-            alt="AI4Elections"
+            alt="#AI4Elections"
             className="object-contain w-auto h-[20vw] md:h-[10vw] lg:h-[9vw] "
           />
         </a>

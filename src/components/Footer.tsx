@@ -52,7 +52,7 @@ const footerGroups: Array<{ title: string; items: FooterItem[] }> = [
         label: "Makemation National Youth AI Festivals",
         href: "https://aifest.makemation.com/",
       },
-      { label: "AI4Elections Hackathon", href: "/" },
+      { label: "#AI4Elections Hackathon", href: "/" },
     ],
   },
   {
