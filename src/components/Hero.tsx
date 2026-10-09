@@ -54,8 +54,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="The link to the GitHub:
-https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/03_onboarding/onboarding_guide.md"
+          href="https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/03_onboarding/onboarding_guide.md"
           className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1"
         >
           Download Resources <FaArrowRight />
@@ -66,7 +65,7 @@ https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/
             {/* <span className="text-center">
               <span className="text-accent-text">Application Deadline:</span>{" "}
               <br />
-              Thursday 29th October 2026 at 11:59pm WAT
+              Friday 29th October 2026 at 11:59pm WAT
             </span> 
             <img
               src="/risenetworks_footer_logo.png"
@@ -121,7 +120,7 @@ https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/
                   <span className="text-accent-text font-semibold">
                     Application Deadline: 
                   </span>
-                  <span className="text-accent-yellow"> Thursday 6th November 2026 at 11:59pm WAT
+                  <span className="text-accent-yellow"> Friday 6th November 2026 at 11:59pm WAT
                   </span>
                 </span>
               </motion.div>

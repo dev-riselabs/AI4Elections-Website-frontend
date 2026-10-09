@@ -136,7 +136,7 @@ const About: React.FC = () => {
           <p className="text-justify lg:col-span-2 text-sm md:text-md text-pillar-text leading-7 md:leading-9">
             Running from October 2026 to February 2027, #AI4Elections will
             officially kick off on{" "}
-            <span className="font-bold">Thursday 16th October 2026</span>,
+            <span className="font-bold">Friday 16th October 2026</span>,
             bringing together innovators, researchers, developers, students,
             electoral experts and civic practitioners to explore responsible
             applications of AI and technology for electoral innovation.
@@ -144,7 +144,7 @@ const About: React.FC = () => {
           <p className="text-justify lg:col-span-2 text-sm md:text-md text-pillar-text leading-7 md:leading-9">
             Applications for the Hackathon will remain open until{" "}
             <span className="font-bold">
-              Thursday 6th November 2026 at 11:59pm WAT
+              Friday 6th November 2026 at 11:59pm WAT
             </span>
             , after which selected participants will progress through team
             formation, technical orientation, mentorship, development and

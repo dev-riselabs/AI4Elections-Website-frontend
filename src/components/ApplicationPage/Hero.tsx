@@ -14,7 +14,7 @@ function Hero() {
         {/* <motion.div className="">
                 <span>
                   <span className="text-accent-text">
-                    Application Deadline:</span> Thursday 29th October 2026 at 11:59pm WAT
+                    Application Deadline:</span> Friday 29th October 2026 at 11:59pm WAT
                 </span>
               </motion.div> */}
         <p className="text-base md:text-[1.4vw] md:mb-3 text-faq-heading ">

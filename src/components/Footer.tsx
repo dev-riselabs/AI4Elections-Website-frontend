@@ -249,7 +249,7 @@ const Footer: React.FC = () => {
         <div className="mt-10 border-t border-white/80 pt-5">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="flex flex-wrap text-center justify-center items-center gap-4 text-[12px] text-white md:text-[13px]">
-              <span>© Copyright 2025. Rise Networks | All Rights Reserved</span>
+              <span>© Copyright 202. Rise Networks | All Rights Reserved</span>
               <a
                 href="/terms-condition"
                 className="transition-colors  hover:text-[#f5a15b]"
