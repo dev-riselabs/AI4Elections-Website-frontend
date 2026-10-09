@@ -136,7 +136,9 @@ function ChallengeArea() {
             if (index === activeTopic)
               return (
                 <motion.div
-                  variants={item}
+                 initial={{ opacity: 0, x: 30 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.5 }}
                   key={topic.title}
                   className="min-h-57.5 rounded-2xl bg-linear-to-b from-purple-600 to-blue-600 p-6 text-white"
                 >
@@ -158,7 +160,7 @@ function ChallengeArea() {
 
             return (
               <motion.button
-                variants={item}
+                // variants={item}
                 key={topic.id}
                 type="button"
                 onClick={() => setActiveTopic(index)}

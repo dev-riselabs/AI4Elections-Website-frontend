@@ -119,7 +119,9 @@ function WhyParticipate() {
             if (index === activeTopic)
               return (
                 <motion.div
-                  variants={item}
+                  initial={{ opacity: 0, x: 30 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.5 }}
                   key={topic.title}
                   className="min-h-20 rounded-2xl bg-linear-to-t from-[#002E57] via-[#01B343] to-[#01B343] p-6 text-white"
                 >
@@ -141,7 +143,7 @@ function WhyParticipate() {
 
             return (
               <motion.button
-                variants={item}
+                // variants={item}
                 key={topic.id}
                 type="button"
                 onClick={() => setActiveTopic(index)}
