@@ -21,14 +21,6 @@ const partners: Partner[] = [
     src: "/nitda_logo.png",
     alt: "NITDA Logo",
   },
- 
-  // {
-  //   id: 3,
-  //   name: "#AI4Elections",
-  //   role: "Initiative Host",
-  //   src: "/ai4elections_logo.png",
-  //   alt: "#AI4Elections Logo",
-  // },
   // {
   //   id: 3,
   //   name: "NCC Nigeria",
@@ -55,21 +47,51 @@ const partners: Partner[] = [
   // },
   {
     id: 7,
+    name: "ICIR",
+    src: "/icir_logo.png",
+    alt: "ICIR Logo",
+  },
+  {
+    id: 8,
     name: "Nithub",
     src: "/nithub_logo.png",
     alt: "Nithub Logo",
   },
   {
-    id: 8,
+    id: 9,
     name: "Citad",
-    src: "/ai4elections_citad.png",
+    src: "/citad_logo.png",
     alt: "Citad Logo",
   },
+  //  {
+  //   id: 10,
+  //   name: "Tap Initiative",
+  //   src: "/tab_logo.png",
+  //   alt: "Tap initiative Logo",
+  // },
+  //  {
+  //   id: 11,
+  //   name: "PAN ATLANTIC SCHOOL OF MEDIA AND COMMUNICATION",
+  //   src: "/pan_atlantic_logo.png",
+  //   alt: "PAN ATLANTIC Logo",
+  // },
+  //  {
+  //   id: 12,
+  //   name: "Google",
+  //   src: "/google_logo.png",
+  //   alt: "Google Logo",
+  // },
+  //  {
+  //   id: 13,
+  //   name: "Microsoft",
+  //   src: "/Microsoft_logo.png",
+  //   alt: "Microsoft Logo",
+  // },
    {
-    id: 9,
-    name: "Tap Initiative",
-    src: "/tab_logo.png",
-    alt: "Tap initiative Logo",
+    id: 14,
+    name: "FUTA",
+    src: "/futa_logo.png",
+    alt: "FUTA Logo",
   },
 ];
 

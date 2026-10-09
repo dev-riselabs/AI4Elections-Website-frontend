@@ -8,19 +8,24 @@ function Hero() {
           #ai4elections hackathon 2026
         </h1>
         <div className="text-[4.2vw] md:text-[1.5vw] md:mb-4 font-bold text-heading-text">
-        <span className="text-accent-text">Application Deadline:</span>&nbsp; 6th
-        November, 2026
-      </div>
+          <span className="text-accent-text">Application Opens:</span>&nbsp;
+          6th November, 2026
+        </div>
+        <div className="text-[4.2vw] md:text-[1.5vw] md:mb-4 font-bold text-heading-text">
+          <span className="text-accent-text">Application Closes:</span>&nbsp;
+          6th November, 2026
+        </div>
         {/* <motion.div className="">
                 <span>
                   <span className="text-accent-text">
-                    Application Deadline:</span> Thursday 29th October 2026 at 11:59pm WAT
+                    Application Deadline:</span> Friday 29th October 2026 at 11:59pm WAT
                 </span>
               </motion.div> */}
         <p className="text-base md:text-[1.4vw] md:mb-3 text-faq-heading ">
-          This is purely a <span className="font-semibold italic">"Design and Develop"</span>  only Competition. Participants are
-          expected to build working solutions not just submit ideas, decks,
-          research papers or wireframes.
+          This is purely a{" "}
+          <span className="font-semibold italic">"Design and Develop"</span>{" "}
+          only Competition. Participants are expected to build working solutions
+          not just submit ideas, decks, research papers or wireframes.
         </p>
       </div>
       <img src="/application_page_hero_img.png" alt="" />

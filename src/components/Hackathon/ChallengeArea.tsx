@@ -64,19 +64,19 @@ const container = {
   },
 };
 
-const item = {
-  hidden: {
-    opacity: 0,
-    x: 30,
-  },
-  show: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
+// const item = {
+//   hidden: {
+//     opacity: 0,
+//     x: 30,
+//   },
+//   show: {
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       duration: 0.5,
+//     },
+//   },
+// };
 
 function ChallengeArea() {
   const [activeTopic, setActiveTopic] = useState(0);

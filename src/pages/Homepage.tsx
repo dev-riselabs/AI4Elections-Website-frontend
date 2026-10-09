@@ -16,16 +16,28 @@ import Eligibility from "../components/Hackathon/Eligibility";
 import Reveal from "../animation/Reveal";
 
 const subNavTabs = [
-  { id: "technical-details", label: "Technical Briefs" },
+  { id: "overview", label: "Overview" },
+  { id: "technical-briefs", label: "Technical Briefs" },
   { id: "concept-document", label: "Concept Document" },
-  { id: "faq", label: "FAQ" },
-  { id: "hackathon", label: "#AI4Elections Hackathon 2026" },
+  { id: "faq", label: "FAQs" },
+  { id: "hackathon", label: "Hackathon" },
 ] as const;
 
 type SubNavTabId = (typeof subNavTabs)[number]["id"];
+const technicalBriefsUrl =
+  "https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/03_onboarding/onboarding_guide.md";
 
 function Homepage() {
-  const [activeTab, setActiveTab] = useState<SubNavTabId>("technical-details");
+  const [activeTab, setActiveTab] = useState<SubNavTabId>("overview");
+
+  const handleTabChange = (tab: SubNavTabId) => {
+    if (tab === "technical-briefs") {
+      window.location.assign(technicalBriefsUrl);
+      return;
+    }
+
+    setActiveTab(tab);
+  };
 
   return (
     <div className="w-full min-h-screen bg-white text-gray-900 selection:bg-orange-500 selection:text-white font-robotoMono">
@@ -39,7 +51,7 @@ function Homepage() {
       <SubNav
         tabs={subNavTabs}
         activeTab={activeTab}
-        onTabChange={setActiveTab}
+        onTabChange={handleTabChange}
       />
 
       <div
@@ -47,11 +59,14 @@ function Homepage() {
         role="tabpanel"
         aria-labelledby={`${activeTab}-tab`}
       >
-        {activeTab === "technical-details" && (
+        {activeTab === "overview" && (
           <>
             {/* 4. About & Details Section */}
             <TechnicalDetails />
           </>
+        )}
+        {activeTab === "technical-briefs" && (
+          <></>
         )}
         {activeTab === "concept-document" && (
           <>
