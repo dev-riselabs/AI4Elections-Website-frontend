@@ -63,12 +63,12 @@ const partners: Partner[] = [
     src: "/citad_logo.png",
     alt: "Citad Logo",
   },
-   {
-    id: 10,
-    name: "Tap Initiative",
-    src: "/tab_logo.png",
-    alt: "Tap initiative Logo",
-  },
+  //  {
+  //   id: 10,
+  //   name: "Tap Initiative",
+  //   src: "/tab_logo.png",
+  //   alt: "Tap initiative Logo",
+  // },
   //  {
   //   id: 11,
   //   name: "PAN ATLANTIC SCHOOL OF MEDIA AND COMMUNICATION",
@@ -87,6 +87,12 @@ const partners: Partner[] = [
   //   src: "/Microsoft_logo.png",
   //   alt: "Microsoft Logo",
   // },
+   {
+    id: 14,
+    name: "FUTA",
+    src: "/futa_logo.png",
+    alt: "FUTA Logo",
+  },
 ];
 
 // Replicate partners 4 times to ensure seamless infinite looping on all screen sizes
