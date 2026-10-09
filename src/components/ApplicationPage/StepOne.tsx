@@ -100,7 +100,10 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
                 What best describe your application? *
               </label>
               <select name="application_type" value={applicationType} onChange={(event) => onApplicationTypeChange(event.currentTarget.value)} className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
-                <option value="">Select</option><option value="Individual">Individual</option><option value="Team">Team</option><option value="Organization">Organization</option>
+                <option value="">Select</option>
+                {/* <option value="Individual">Individual</option> */}
+                <option value="Team">Team</option>
+                {/* <option value="Organization">Organization</option> */}
               </select>
             </div>
           </div>
