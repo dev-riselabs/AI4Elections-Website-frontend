@@ -6,19 +6,19 @@ const topics = [
     id: 1,
     title: "AI & Electoral Information Integrity",
     description:
-      "Solutions for detecting, assessing and responding to AI-generated or manipulated electoral information, synthetic media, impersonation and misleading content.Outputsare expected toinclude information verification tools, provenance systems, multilingual fact-checking assistance and responsible information -analysis systems",
+      "Solutions for detecting, assessing and responding to AI-generated or manipulated electoral information, synthetic media, impersonation and misleading content.Outputsare expected toinclude information verification tools, provenance systems, multilingual fact-checking assistance and responsible information -analysis systems.",
   },
   {
     id: 2,
     title: "Electoral Data Intelligence",
     description:
-      "Responsible AI applications for analysing authorised electoral datasets, improving data quality, processing public documents, supporting logistics analysis and identifying data anomalies for human review.Solutions must not independently declare electoral results or substitute algorithmic outputs for legally authorised electoral proc",
+      "Responsible AI applications for analysing authorised electoral datasets, improving data quality, processing public documents, supporting logistics analysis and identifying data anomalies for human review. Solutions must not independently declare electoral results or substitute algorithmic outputs for legally authorised electoral processes.",
   },
   {
     id: 3,
     title: "Inclusive & Multilingual Civic Technology",
     description:
-      "Accessible voter-information tools, Nigerian-language electoral and civic information, assistive interfacesfor people with disabilities, digital literacy solutions and technology addressing barriers to electoral participa",
+      "Accessible voter-information tools, Nigerian-language electoral and civic information, assistive interfacesfor people with disabilities, digital literacy solutions and technology addressing barriers to electoral toral participation.",
   },
   {
     id: 4,
@@ -32,12 +32,12 @@ applications, privacy-preserving systems, incident reporting and response tools,
 training resources, authorised simulations and resilien ce models for electoral technology. Participants may also develop tools 
 for identifying common security weaknesses in their own applications, improving secure software development practices, 
 supporting incident documentation, or modelling potential operati onal disruptions using synthetic datasets and isolated test 
-environments`,
+environments.`,
   },
   {
     id: 5,
     title: "Election Observation & Citizen Accountability",
-    description: `Tools for structured observation reporting, incident documentation, civic feedback, public information access and transparenc y, 
+    description: `Tools for structured observation reporting, incident documentation, civic feedback, public information access and transparency, 
 with appropriate safeguards for observers and citizens. Final problem statements will be developed with relevant subject -matter 
 experts and prospective institutional partners. Participation by an institution will not imply endorsement of any so
 The Programme welcomes responsible innovation, particularly where technology can contribute to voter education, 
@@ -45,7 +45,7 @@ accessibility, operational efficiency, public information and greater citizen un
 are encouraged to develop solutions for improving voter education, simplifying electoral information, improving accessibility, 
 helping citizens locate and understand publicly available electoral information, supporting election training, analysing 
 publicly available election data, or modelling election logistics using simulated datasets. Where data is required, the 
-preference should be for publicly available, anonymised, aggregated or synthetic`,
+preference should be for publicly available, anonymised, aggregated or synthetic data.`,
   },
   // {
   //   id: 6,
@@ -87,11 +87,11 @@ function ChallengeArea() {
     >
       <div className="flex flex-col gap-4 md:gap-6 items-center ">
         <h2 className="text-4xl md:text-heading-2 font-bold text-heading-text tracking-tight uppercase">
-          CHALLENGE AREAS
+          #AI4ELECTIONS HACKATHON TRACKS
         </h2>
-        <p className="text-heading-text text-sm md:text-lg font-medium text-center max-w-[70ch]">
+        {/* <p className="text-heading-text text-sm md:text-lg font-medium text-center max-w-[70ch]">
           Explore the possibilities
-        </p>
+        </p> */}
         <p className="text-base md:text-xl text-heading-text">
           Participants may explore challenges across different parts of the
           electoral and democratic participation ecosystem. The following areas
@@ -103,7 +103,7 @@ function ChallengeArea() {
         {/* Image */}
         <div className="overflow-hidden rounded-2xl">
           <motion.img
-            src="/challenge_area_img.png"
+            src="/tracks_img.png"
             alt="AI robot"
             className="h-full w-full object-cover"
             initial={{
