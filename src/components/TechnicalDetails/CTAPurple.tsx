@@ -31,8 +31,8 @@ const CTAPurple: React.FC = () => {
 
             <p className="text-white/95 text-sm md:text-[1.4vw] xl:text-[1.4vw] leading-7 md:leading-9">
               Start with the problem. Understand the people. Examine the
-              context. Then determine how AI can contribute to the right tool
-              for the solution.
+              context. Then determine how AI can be used as a correct and
+              efficient solution.
             </p>
 
             <div className="pt-2">

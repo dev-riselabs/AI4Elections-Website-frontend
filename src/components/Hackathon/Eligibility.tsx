@@ -98,7 +98,7 @@ export default function Eligibility() {
         {/* Heading */}
         <div className="space-y-2">
           <p className="text-xs md:text-lg text-small-text">
-            Who Can Participate
+            Who Can Participate?
           </p>
 
           <h1 className=" text-3xl font-bold tracking-wide md:text-heading-3">
