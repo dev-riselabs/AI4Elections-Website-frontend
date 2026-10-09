@@ -125,7 +125,7 @@ function TermsCondition() {
         <Paragraph
           title="→ INEC and Other Institutional Partners: Non Endorsement"
           paragraphs={[
-            "The AI4Elections Hackathon is organised and administered by Rise Networks. ",
+            "The #AI4Elections Hackathon is organised and administered by Rise Networks. ",
             "Any engagement with the Independent National Electoral Commission (INEC), government institutions, public agencies, sponsors, technical partners, universities, civic organisations or other stakeholders shall be subject to the relevant institution's approval and applicable procedures.",
             "Institutional participation, technical input, observation, feedback, consultation or contribution to challenge statements shall not constitute or imply endorsement, certification, approval, procurement commitment, adoption, funding, piloting or deployment of any participant's solution.",
             "No participant or team may represent that INEC or any other institution has approved, endorsed, certified, adopted or agreed to deploy their solution unless that institution has expressly authorised the representation in writing. ",
