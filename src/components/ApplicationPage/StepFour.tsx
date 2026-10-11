@@ -80,7 +80,7 @@ function StepFour({ handleNext, applicationType }: StepFourProps) {
                 <input
                   type="text"
                   name="team_name"
-                  placeholder=""
+                  placeholder="Civic Tech Abuja..."
                   className="text-header-text text-sm md:text-base outline-none"
                 />
               </div>
@@ -97,7 +97,7 @@ function StepFour({ handleNext, applicationType }: StepFourProps) {
                 <input
                   type="text"
                   name="team_lead"
-                  placeholder=""
+                  placeholder="Chinedu Okafor..."
                   className="text-header-text text-sm md:text-base outline-none"
                 />
               </div>
@@ -127,7 +127,7 @@ function StepFour({ handleNext, applicationType }: StepFourProps) {
               >
                 Team Description
               </label>
-              <textarea name="team_description" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="team_description" placeholder="We are a team of..." className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             <div className="flex flex-col gap-2 md:col-span-2">
               <label
@@ -137,7 +137,7 @@ function StepFour({ handleNext, applicationType }: StepFourProps) {
                 Names and Role of Team Members ( use (,) after each name and
                 role)
               </label>
-              <textarea name="team_members" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="team_members" placeholder="Chinedu Okafor - Project..." className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
           </div>
         </div>}
@@ -181,7 +181,7 @@ function StepFour({ handleNext, applicationType }: StepFourProps) {
               >
                 If yes, please tell us what support you may require
               </label>
-              <textarea name="accessibility_support" className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="accessibility_support" placeholder="I would benefit from..." className="rounded-xl bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>}
           </div>
         </div>

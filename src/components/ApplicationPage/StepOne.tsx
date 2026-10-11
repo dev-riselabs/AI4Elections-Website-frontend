@@ -122,7 +122,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
               >
                 Tell us about your experience *
               </label>
-              <textarea name="experience_summary" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none"></textarea>
+              <textarea name="experience_summary" placeholder="I have supported civic..." className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none"></textarea>
             </div>
             <div className="flex flex-col gap-2">
               <label
@@ -131,7 +131,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
               >
                Primary Area of Expertise *
               </label>
-              <input name="primary_expertise" type="text" placeholder="Enter your primary expertise" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+              <input name="primary_expertise" type="text" placeholder="Data science and public..." className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
             </div>
             <div className="flex flex-col gap-2">
               <label
@@ -168,7 +168,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
                   type="text"
                   name="current_role"
                   required
-                  placeholder="Enter your current role"
+                  placeholder="Civic technology researcher..."
                   className="text-sm md:text-base text-input-text outline-none flex-1"
                 />
               </div>
@@ -186,7 +186,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
                   type="text"
                   name="organization"
                   required
-                  placeholder="Enter organisation or institution"
+                  placeholder="Centre for Democracy and..."
                   className="text-sm md:text-base text-input-text outline-none flex-1"
                 />
               </div>
@@ -198,7 +198,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
               >
                Highest level of Education *
               </label>
-              <input name="education_level" type="text" placeholder="Enter your highest education level" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+              <input name="education_level" type="text" placeholder="Bachelor's degree in public..." className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
             </div>
             <div className="flex flex-col gap-2">
               <label
@@ -213,7 +213,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
                   type="text"
                   name="academic_field"
                   required
-                  placeholder="Enter your field"
+                  placeholder="Political science..."
                   className="text-sm md:text-base text-input-text outline-none flex-1"
                 />
               </div>

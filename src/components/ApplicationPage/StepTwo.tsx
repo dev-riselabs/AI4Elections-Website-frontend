@@ -19,7 +19,7 @@ function StepTwo({ handleNext }: StepTwoProps) {
               >
                 Skills (Use (,) after each skill) *
               </label>
-              <textarea name="skills" className="rounded-xl text-sm md:text-base bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none"></textarea>
+              <textarea name="skills" placeholder="Data analysis, community engagement..." className="rounded-xl text-sm md:text-base bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none"></textarea>
             </div>
             <div className="flex flex-col gap-2 ">
               <label
@@ -28,7 +28,7 @@ function StepTwo({ handleNext }: StepTwoProps) {
               >
                 Tell us about your relevant experience *
               </label>
-              <textarea name="relevant_experience" className="rounded-xl text-sm md:text-base bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="relevant_experience" placeholder="I helped a community..." className="rounded-xl text-sm md:text-base bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ function StepTwo({ handleNext }: StepTwoProps) {
               >
                Which challenge track interests you most? *
               </label>
-              <input name="challenge_track" type="text" placeholder="Enter your preferred challenge track" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+              <input name="challenge_track" type="text" placeholder="Electoral integrity..." className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
             </div>
             <div className="flex flex-col gap-2 ">
               <label
@@ -56,7 +56,7 @@ function StepTwo({ handleNext }: StepTwoProps) {
               >
                 Why are you interested in this challenge area? *
               </label>
-              <textarea name="challenge_interest_reason" className="rounded-xl text-sm md:text-base bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="challenge_interest_reason" placeholder="I want to use my..." className="rounded-xl text-sm md:text-base bg-form-input shadow-md flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
           </div>
         </div>

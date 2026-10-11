@@ -154,7 +154,7 @@ function FormContainer() {
                     type="text"
                     name="organization"
                     required
-                    placeholder="Enter organisation or institution"
+                    placeholder="Centre for Democracy and..."
                     className="text-sm md:text-base text-input-text outline-none flex-1"
                   />
                 </div>
@@ -166,7 +166,7 @@ function FormContainer() {
                 >
                   What areas are you interested in? *
                 </label>
-                <input name="areas_of_interest" type="text" placeholder="Enter your areas of interest" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+                <input name="areas_of_interest" type="text" placeholder="Voter education and election..." className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
               </div>
                <div className="flex flex-col gap-2">
                 <label
@@ -175,7 +175,7 @@ function FormContainer() {
                 >
                   How would you like to participate? *
                 </label>
-                <input name="participation_preference" type="text" placeholder="How would you like to participate?" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+                <input name="participation_preference" type="text" placeholder="Mentorship and community research..." className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
               </div>
               <div className="flex flex-col gap-2">
                 <label
@@ -184,7 +184,7 @@ function FormContainer() {
                 >
                   Education Qualification *
                 </label>
-                <input name="education_qualification" type="text" placeholder="Enter your qualification" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
+                <input name="education_qualification" type="text" placeholder="Bachelor's degree in public..." className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 outline-none" />
               </div>
               <div className="flex flex-col gap-2 md:col-span-2">
               <label
@@ -193,7 +193,7 @@ function FormContainer() {
               >
                 Tell us a little about yourself *
               </label>
-              <textarea name="about_yourself" placeholder="Briefly tell us about your interests, experience or what you hope to contribute." className="rounded-xl bg-form-input shadow-md flex text-sm md:text-base items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
+              <textarea name="about_yourself" placeholder="I work with a civic..." className="rounded-xl bg-form-input shadow-md flex text-sm md:text-base items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all resize-none outline-none h-30 md:h-47.5"></textarea>
             </div>
             </div>
           </div>
