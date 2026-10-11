@@ -32,7 +32,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
                   type="text"
                   name="first_name"
                   required
-                  placeholder="John"
+                  placeholder="Adebayo"
                   className="text-sm md:text-base text-input-text outline-none flex-1"
                 />
               </div>
@@ -50,7 +50,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
                   type="text"
                   name="last_name"
                   required
-                  placeholder="Doe"
+                  placeholder="Hassan"
                   className="text-sm md:text-base text-input-text outline-none flex-1"
                 />
               </div>
@@ -68,7 +68,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
                   type="email"
                   name="email"
                   required
-                  placeholder="johndoe@example.com"
+                  placeholder="adebayohassan@example.com"
                   className="text-sm md:text-base text-input-text outline-none flex-1"
                 />
               </div>
@@ -86,7 +86,7 @@ function StepOne({ handleNext, applicationType, onApplicationTypeChange }: StepO
                   type="text"
                   name="phone"
                   required
-                  placeholder="(555) 123-5672"
+                  placeholder="+234 805 123 5672"
                   className="text-sm md:text-base text-input-text outline-none flex-1"
                 />
               </div>

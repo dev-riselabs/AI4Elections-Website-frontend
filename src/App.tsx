@@ -9,7 +9,17 @@ const TermsCondition = lazy(() => import("./pages/TermsCondition"));
 export default function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div role="status" className="p-4">Loading page...</div>}>
+      <Suspense
+        fallback={
+          <div
+            role="status"
+            aria-label="Loading page"
+            className="flex min-h-screen items-center justify-center"
+          >
+            <span className="h-12 w-12 animate-spin rounded-full border-4 border-gray-200 border-t-brand-purple" />
+          </div>
+        }
+      >
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/application" element={<ApplicationPage />} />
