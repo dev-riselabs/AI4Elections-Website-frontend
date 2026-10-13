@@ -153,6 +153,8 @@ const Footer: React.FC = () => {
               src="/risenetworks_footer_logo.png"
               alt="Rise Networks"
               className="w-[70vw] md:w-[15vw] object-contain"
+              loading="lazy"
+              decoding="async"
             />
           </div>
 

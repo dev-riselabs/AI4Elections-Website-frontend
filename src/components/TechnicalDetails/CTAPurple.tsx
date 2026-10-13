@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const CTAPurple: React.FC = () => {
   return (
-    <section className="w-full bg-[url('/dont_develop_bg.png')] bg-cover bg-center text-white overflow-hidden pt-4 font-robotoMono">
+    <section className="w-full bg-[url('/dont_develop_bg.jpg')] bg-cover bg-center text-white overflow-hidden pt-4 font-robotoMono">
       <div className=" ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4  items-center">
           {/* Left Side: Cutout image of three people */}
@@ -14,6 +14,8 @@ const CTAPurple: React.FC = () => {
               src="/dont_develop_img.png"
               alt="Three young innovators"
               className="w-full items-start self-end drop-shadow-xl"
+              loading="lazy"
+              decoding="async"
             />
           </div>
 

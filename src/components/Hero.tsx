@@ -5,10 +5,10 @@ import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
 const heroSlides = [
-  "/hero_technical_brief.png",
-  "/hero-img.png",
-  "/flier_distribution.png",
-  "/flier_distribution2.png",
+  "/hero_technical_brief.jpg",
+  "/hero-img.jpg",
+  "/flier_distribution.jpg",
+  "/flier_distribution2.jpg",
   // "/National Innovation Summit Panel.png",
 ];
 
@@ -35,7 +35,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full h-full  bg-[url('/hero-bg.png')]  bg-no-repeat bg-cover bg-center md:bg-center font-robotoMono p-2 md:p-6">
+    <section className="w-full h-full  bg-[url('/hero-bg.jpg')]  bg-no-repeat bg-cover bg-center md:bg-center font-robotoMono p-2 md:p-6">
       {/* Top Bar (Navbar): Flex container with three distinct sections */}
       <header className="w-full grid grid-cols-[auto_auto] md:grid-cols-[auto_auto_auto] gap-5 justify-between md:gap-10">
         <a href="https://risenetworks.org" aria-label="Rise Networks website">
@@ -205,6 +205,8 @@ export default function Hero() {
                       key={activeSlide}
                       src={heroSlides[activeSlide]}
                       alt="Hero People"
+                      decoding="async"
+                      fetchPriority={activeSlide === 0 ? "high" : "auto"}
                       className="w-full max-w-md md:max-w-none object-contain align-center drop-shadow-2xl"
                       initial={{ opacity: 0, x: 36 }}
                       animate={{ opacity: 1, x: 0 }}

@@ -4,14 +4,16 @@ import { motion } from "framer-motion";
 
 const About: React.FC = () => {
   return (
-    <section className="w-full h-full py-10 md:p-10 bg-[url('/technical_brief_bg.png')] bg-no-repeat bg-cover bg-center">
+    <section className="w-full h-full py-10 md:p-10 bg-[url('/technical_brief_bg.jpg')] bg-no-repeat bg-cover bg-center">
       <div className="max-w-6xl mx-auto px-5">
         {/* Top Image: Edge-to-edge within container rectangular image of a team meeting */}
         <div className="w-full overflow-hidden rounded-xl shadow-md mb-8">
           <img
-            src="/about-meeting.jpg"
+            src="/about-meeting-optimized.jpg"
             alt="Team Meeting Collaboration"
             className="w-full rounded-xl shadow-md object-cover max-h-175 hover:scale-[1.01] transition-transform duration-500"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
@@ -113,9 +115,11 @@ const About: React.FC = () => {
             </p>
           </div>
           <motion.img
-            src="./technical_brief2.png"
+            src="/technical_brief2.jpg"
             alt=""
             className="w-full xl:w-[26vw] xl:ml-20"
+            loading="lazy"
+            decoding="async"
             initial={{
               opacity: 0,
               scale: 0.95,

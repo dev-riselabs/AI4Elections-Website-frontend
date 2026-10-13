@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const CTACyan: React.FC = () => {
   return (
-    <section className="w-full bg-[url('/beyond_hackathon_bg.png')] bg-cover bg-center text-gray-900 overflow-hidden">
+    <section className="w-full bg-[url('/beyond_hackathon_bg.jpg')] bg-cover bg-center text-gray-900 overflow-hidden">
       <div className=" md:pr-0">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           {/* Left Side: Align items center */}
@@ -39,6 +39,8 @@ const CTACyan: React.FC = () => {
               src="/beyond_hackathon_img.png"
               alt="Four young innovators"
               className="w-full self-end drop-shadow-xl"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>

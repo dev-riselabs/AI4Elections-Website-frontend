@@ -25,9 +25,11 @@ function TheHackathon() {
         </Link>
       </div>
       <img
-        src="/about-meeting.jpg"
+        src="/about-meeting-optimized.jpg"
         alt=""
         className="hover:scale-101 transition-all"
+        loading="lazy"
+        decoding="async"
       />
       <div className="flex flex-col gap-4 md:gap-6">
         <p className="text-sm md:text-lg text-header-text">
