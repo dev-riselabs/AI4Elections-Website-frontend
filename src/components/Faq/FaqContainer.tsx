@@ -353,8 +353,8 @@ function FaqContainer() {
               </h4>
               <p className="text-xs md:text-base text-header-text">
                 The kick off date is{" "}
-                <span className="font-bold">16th October</span> and the deadline
-                is <span className="font-bold">6th November 2026</span>, at{" "}
+                <span className="font-bold">21st October</span> and the deadline
+                is <span className="font-bold">11th November 2026</span>, at{" "}
                 <span className="font-bold">11:59 PM West Africa Time</span>.
                 Applicants should check the official application page for the
                 final confirmed deadline

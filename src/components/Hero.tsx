@@ -133,7 +133,7 @@ export default function Hero() {
                   </span>
                   <span className="text-accent-yellow">
                     {" "}
-                    Friday 16th October 2026
+                    Wednesday 21st October 2026
                   </span>
                 </span>
               </motion.div>
@@ -144,7 +144,7 @@ export default function Hero() {
                   </span>
                   <span className="text-accent-yellow">
                     {" "}
-                    Friday 6th November 2026 at 11:59pm WAT
+                    Wednesday 11th November 2026 at 11:59pm WAT
                   </span>
                 </span>
               </motion.div>

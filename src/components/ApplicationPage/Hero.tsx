@@ -9,11 +9,11 @@ function Hero() {
         </h1>
         <div className="text-[4.2vw] md:text-[1.5vw] md:mb-4 font-bold text-heading-text">
           <span className="text-accent-text">Application Opens:</span>&nbsp;
-          6th November, 2026
+          21st October, 2026
         </div>
         <div className="text-[4.2vw] md:text-[1.5vw] md:mb-4 font-bold text-heading-text">
           <span className="text-accent-text">Application Closes:</span>&nbsp;
-          6th November, 2026
+          11th November, 2026
         </div>
         {/* <motion.div className="">
                 <span>
