@@ -22,7 +22,7 @@ function Download() {
           </p>
         </div>
         <a
-          href="#"
+          href="/AI4Elections_Concept_Document_2026-2027.pdf"
           download
           className="flex items-center gap-2 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-2 md:px-6 py-3 justify-center"
         >
