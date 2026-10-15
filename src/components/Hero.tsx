@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const heroSlides = [
   "/AI4ELECTIONS_HACKATHON_FLIER.png",
-  "/hero-img.jpg",
+  // "/hero-img.jpg",
   "/flier_distribution.jpg",
   "/flier_distribution2.jpg",
   // "/National Innovation Summit Panel.png",
