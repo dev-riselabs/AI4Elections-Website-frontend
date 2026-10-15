@@ -5,7 +5,7 @@ import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
 const heroSlides = [
-  // "/hero_technical_brief.jpg",
+  "/AI4ELECTIONS_HACKATHON_FLIER.png",
   "/hero-img.jpg",
   "/flier_distribution.jpg",
   "/flier_distribution2.jpg",

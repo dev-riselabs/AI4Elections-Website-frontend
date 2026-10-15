@@ -115,8 +115,8 @@ const About: React.FC = () => {
             </p>
           </div>
           <motion.img
-            // src="/technical_brief2.jpg"
-            src="/hero-img.jpg"
+            src="/AI4ELECTIONS_HACKATHON_FLIER_B.png"
+            // src="/hero-img.jpg"
             alt=""
             className="w-full xl:w-[26vw] xl:ml-20"
             loading="lazy"
