@@ -202,41 +202,41 @@ import CTACyan from "../TechnicalDetails/CTACyan";
 
 const grandPrizes = [
   {
-    amount: "₦2,000,000",
-    description: "Best overall AI-for-elections solution",
+    amount: "₦4,000,000",
+    description: "Grand Prize - Overall Champion - Best overall AI-for-elections solutio",
+  },
+  {
+    amount: "₦2,500,000",
+    description: "Runner-up - Second-highest overall scor",
   },
   {
     amount: "₦1,500,000",
-    description: "Best overall AI-for-elections solution",
-  },
-  {
-    amount: "₦500,000",
-    description: "Best overall AI-for-elections solution",
+    description: "Second Runner-up - Third-highest overall score",
   },
 ];
 
 const specialAwards = [
   {
     title: "Research & Policy Innovation Award",
-    amount: "₦250,000",
+    amount: "₦500,000",
     description:
       "Best misinformation detection, verification or electoral information solution",
   },
   {
     title: "Electoral and Civic Inclusion Award",
-    amount: "₦250,000",
+    amount: "₦500,000",
     description:
       "Best solution for accessibility, multilingual participation or underserved voters",
   },
   {
     title: "Responsible AI and Safety Award",
-    amount: "₦250,000",
+    amount: "₦500,000",
     description:
       "Best data-driven solution for electoral analysis or accountability",
   },
   {
     title: "Cybersecurity and Resilience Award",
-    amount: "₦250,000",
+    amount: "₦500,000",
     description:
       "Best solution addressing election-related digital security or system resilience",
   },

@@ -150,7 +150,7 @@ function TermsCondition() {
             "Entries shall be assessed in accordance with the published eligibility requirements, judging criteria, technical requirements and Competition rules.",
             "The judging process may consider factors including relevance to the challenge statement, technical functionality, innovation, usability, feasibility, responsible AI, security, accessibility, potential public value and quality of demonstration.",
             "Rise Networks shall be responsible for administering the judging process, coordinating judges, validating results and confirming the winning teams in accordance with the Competition rules.",
-            "The proposed total prize pool for the inaugural edition is ₦5,000,000 (Five Million Naira), subject to final confirmation in the official prize announcement and Competition rules.",
+            "The proposed total prize pool for the inaugural edition is ₦10,000,000 (Ten Million Naira), subject to final confirmation in the official prize announcement and Competition rules.",
             "The prize allocation, number of winning teams, any special awards, payment arrangements, verification requirements and applicable conditions shall be communicated through official Rise Networks channels.",
             "No participant shall be entitled to a prize solely by virtue of submitting an application, participating in the Hackathon or reaching a particular stage of the Competition.",
             "Prize awards are subject to verification of eligibility, compliance with the Competition rules, confirmation of the winning entry and completion of any reasonable documentation or administrative requirements.",
