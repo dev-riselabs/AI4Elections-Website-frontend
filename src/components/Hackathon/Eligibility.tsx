@@ -20,12 +20,12 @@ const requirements = [
 
 const keyDates = [
   {
-    date: "21st October 2026",
+    date: "22nd October 2026",
     title: "Applications Open",
     description: "Application website goes live.",
   },
   {
-    date: "11th November 2026",
+    date: "12th November 2026",
     title: "Application Deadline",
     description: "Applications close at 11:59pm WAT",
   },
