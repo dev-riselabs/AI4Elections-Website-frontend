@@ -15,12 +15,12 @@ const partners: Partner[] = [
     src: "/risenetworks_logo_.png",
     alt: "Rise Networks Logo",
   },
-  {
-    id: 2,
-    name: "NITDA Nigeria",
-    src: "/nitda_logo.png",
-    alt: "NITDA Logo",
-  },
+  // {
+  //   id: 2,
+  //   name: "NITDA Nigeria",
+  //   src: "/nitda_logo.png",
+  //   alt: "NITDA Logo",
+  // },
   // {
   //   id: 3,
   //   name: "NCC Nigeria",
@@ -39,12 +39,12 @@ const partners: Partner[] = [
     src: "/cleen_logo.png",
     alt: "Cleen Foundation Logo",
   },
-  // {
-  //   id: 6,
-  //   name: "Meta",
-  //   src: "/meta_logo.png",
-  //   alt: "Meta Logo",
-  // },
+  {
+    id: 6,
+    name: "Meta",
+    src: "/meta_logo.png",
+    alt: "Meta Logo",
+  },
   {
     id: 7,
     name: "ICIR",
@@ -75,23 +75,29 @@ const partners: Partner[] = [
   //   src: "/pan_atlantic_logo.png",
   //   alt: "PAN ATLANTIC Logo",
   // },
-  //  {
-  //   id: 12,
-  //   name: "Google",
-  //   src: "/google_logo.png",
-  //   alt: "Google Logo",
-  // },
-  //  {
-  //   id: 13,
-  //   name: "Microsoft",
-  //   src: "/Microsoft_logo.png",
-  //   alt: "Microsoft Logo",
-  // },
+   {
+    id: 12,
+    name: "Google",
+    src: "/google_logo.png",
+    alt: "Google Logo",
+  },
+   {
+    id: 13,
+    name: "Microsoft",
+    src: "/Microsoft_logo.png",
+    alt: "Microsoft Logo",
+  },
    {
     id: 14,
     name: "FUTA",
     src: "/futa_logo.png",
     alt: "FUTA Logo",
+  },
+   {
+    id: 15,
+    name: "IPC",
+    src: "/ipc_logo.png",
+    alt: "IPC Logo",
   },
 ];
 
