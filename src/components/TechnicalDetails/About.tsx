@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const About: React.FC = () => {
   return (
-    <section className="w-full h-full py-10 md:p-10 bg-[url('/technical_brief_bg.jpg')] bg-no-repeat bg-cover bg-center">
+    <section className="w-full h-full py-10 md:p-10 bg-[url('/technical_brief_bg.png')] bg-no-repeat bg-cover bg-center">
       <div className="max-w-6xl mx-auto px-5">
         {/* Top Image: Edge-to-edge within container rectangular image of a team meeting */}
         <div className="w-full overflow-hidden rounded-xl shadow-md mb-8">
