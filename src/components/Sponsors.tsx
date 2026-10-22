@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Play, Pause, MoveLeft, MoveRight } from 'lucide-react';
+import { useState } from "react";
+import { Play, Pause, MoveLeft, MoveRight } from "lucide-react";
 
 interface Partner {
   id: number;
@@ -9,7 +9,7 @@ interface Partner {
 }
 
 const partners: Partner[] = [
-   {
+  {
     id: 1,
     name: "Rise Networks",
     src: "/risenetworks_logo_.png",
@@ -63,6 +63,20 @@ const partners: Partner[] = [
     src: "/citad_logo.png",
     alt: "Citad Logo",
   },
+  {
+    id: 10,
+    name: "MacArthur Foundation",
+    src: "/macarthur_foundation_logo.png",
+    alt: "MacArthur Foundation Logo",
+  },
+
+  {
+    id: 11,
+    name: "Luminate",
+    src: "/luminate_logo.png",
+    alt: "Luminate Logo",
+  },
+
   //  {
   //   id: 10,
   //   name: "Tap Initiative",
@@ -75,47 +89,54 @@ const partners: Partner[] = [
   //   src: "/pan_atlantic_logo.png",
   //   alt: "PAN ATLANTIC Logo",
   // },
-   {
+  {
     id: 12,
     name: "Google",
     src: "/google_logo.png",
     alt: "Google Logo",
   },
-   {
+  {
     id: 13,
     name: "Microsoft",
     src: "/Microsoft_logo.png",
     alt: "Microsoft Logo",
   },
-   {
+  {
     id: 14,
     name: "FUTA",
     src: "/futa_logo.png",
     alt: "FUTA Logo",
   },
-   {
+  {
     id: 15,
     name: "IPC",
     src: "/ipc_logo.png",
     alt: "IPC Logo",
   },
+  {
+    id: 16,
+    name: "Legal Naija",
+    src: "/legal_naija_logo.png",
+    alt: "Legal Naija Logo",
+  },
+  {
+    id: 15,
+    name: "Real Broadcasting Network",
+    src: "/real_broadcasting_network_logo.png",
+    alt: "Real Broadcasting Network Logo",
+  },
 ];
 
 // Replicate partners 4 times to ensure seamless infinite looping on all screen sizes
-const marqueeList = [
-  ...partners,
-  ...partners,
-  ...partners,
-  ...partners,
-];
+const marqueeList = [...partners, ...partners, ...partners, ...partners];
 
 export default function Sponsors() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
-  const [direction, setDirection] = useState<'normal' | 'reverse'>('normal');
+  const [direction, setDirection] = useState<"normal" | "reverse">("normal");
 
   const toggleDirection = () => {
-    setDirection((prev) => (prev === 'normal' ? 'reverse' : 'normal'));
+    setDirection((prev) => (prev === "normal" ? "reverse" : "normal"));
   };
 
   return (
@@ -126,12 +147,11 @@ export default function Sponsors() {
     >
       {/* Header Bar */}
       <div className="max-w-7xl mx-auto px-4 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
-        </div>
+        <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5"></div>
 
         {/* Interactive Controls */}
         <div className="flex items-center gap-2">
-           {/* Pause / Play Button */}
+          {/* Pause / Play Button */}
           <button
             type="button"
             onClick={() => setIsPlaying((prev) => !prev)}
@@ -156,10 +176,10 @@ export default function Sponsors() {
             type="button"
             onClick={toggleDirection}
             className="inline-flex items-center gap-1.5 text-xs text-gray-600 hover:text-gray-900 bg-gray-50 hover:bg-gray-100 border border-gray-200 px-3 py-1.5 rounded-full transition-all cursor-pointer shadow-xs active:scale-95"
-            title={`Reverse direction (currently ${direction === 'normal' ? 'left' : 'right'})`}
+            title={`Reverse direction (currently ${direction === "normal" ? "left" : "right"})`}
             aria-label="Reverse slider direction"
           >
-            {direction === 'normal' ? (
+            {direction === "normal" ? (
               <>
                 <MoveRight className="w-3.5 h-3.5 text-gray-500" />
                 <span className="hidden xs:inline">Reverse</span>
@@ -171,8 +191,6 @@ export default function Sponsors() {
               </>
             )}
           </button>
-
-         
         </div>
       </div>
 
@@ -194,7 +212,7 @@ export default function Sponsors() {
         <div
           className="flex items-center gap-6 sm:gap-8 w-max animate-sponsor-marquee py-2"
           style={{
-            animationPlayState: isPlaying && !isHovered ? 'running' : 'paused',
+            animationPlayState: isPlaying && !isHovered ? "running" : "paused",
             animationDirection: direction,
           }}
         >

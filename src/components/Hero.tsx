@@ -10,6 +10,7 @@ const heroSlides = [
   // "/hero-img.jpg",
   "/flier_distribution.jpg",
   "/flier_distribution2.jpg",
+  
   // "/National Innovation Summit Panel.png",
 ];
 
@@ -55,10 +56,11 @@ export default function Hero() {
         </a>
 
         <a
-          href="https://github.com/Rise-Networks-AI-Labs/-AI4Elections-Hackathon/blob/main/docs/03_onboarding/onboarding_guide.md"
-          className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[2.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1"
+          href="/Call_for_Applications_-_AI4Elections_Hackathon_2026_-_2027_by_Rise_Networks_and_Partners.pdf"
+          download
+          className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[3.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1"
         >
-          Download Resources <FaArrowRight />
+          Download Call for Applicaion <FaArrowRight />
         </a>
         {/* <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3"> */}
         {/* Left: Dark blue background with white text */}
