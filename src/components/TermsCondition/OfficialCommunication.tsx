@@ -6,12 +6,12 @@ function OfficialCommunication() {
         → Official Communications and Contact{" "}
       </h3>
       <div className="flex flex-col gap-6">
-        <p className="text-xs md:text-base text-header-text leading-8">
+        <p className="text-sm md:text-base text-header-text leading-8">
           All official communications regarding the #AI4Elections Hackathon
           2026-2027 shall be issued through Rise Networks' designated
           communication channels.
         </p>
-        <p className="text-xs md:text-base text-header-text leading-8">
+        <p className="text-sm md:text-base text-header-text leading-8">
           For enquiries, clarification or matters relating to participation,
           please contact:{" "}
         </p>
@@ -19,10 +19,10 @@ function OfficialCommunication() {
           <li className="text-xs md:text-base text-accent-text leading-8">
             Rise Networks{" "}
           </li>
-          <li className="text-xs md:text-base text-header-text leading-8">
+          <li className="text-sm md:text-base text-header-text leading-8">
             Email: <span className="font-bold">labs@risenetworks.org</span>{" "}
           </li>
-          <li className="text-xs md:text-base text-header-text leading-8">
+          <li className="text-sm md:text-base text-header-text leading-8">
             Website:{" "}
             <span className="font-bold">
               {" "}
@@ -30,7 +30,7 @@ function OfficialCommunication() {
             </span>{" "}
           </li>
         </ul>
-        <p className="text-xs md:text-base text-header-text leading-8">
+        <p className="text-sm md:text-base text-header-text leading-8">
           By registering for or participating in the #AI4Elections Hackathon
           2026-2027, participants acknowledge that they have read, understood
           and agreed to these Terms and Conditions and the applicable

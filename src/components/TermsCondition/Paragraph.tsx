@@ -10,7 +10,7 @@ function Paragraph({title, paragraphs}: ParagraphProps) {
      <h3 className="text-lg md:text-2xl font-bold text-terms-text">{title}</h3>
       <div className="flex flex-col gap-6">
         {
-            paragraphs.map(p => <p key={p} className="text-xs md:text-base text-header-text leading-8">{p}</p>)
+            paragraphs.map(p => <p key={p} className="text-sm md:text-base text-header-text leading-8">{p}</p>)
         }
       </div>
       </article>

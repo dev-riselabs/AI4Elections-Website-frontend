@@ -33,7 +33,7 @@ function ParagraphList({ title, descriptions, highlight, index }: ListProps) {
             return (
               <p
                 key={i}
-                className="text-xs md:text-base text-header-text leading-8"
+                className="text-sm md:text-base text-header-text leading-8"
               >
                 {item}
               </p>
@@ -42,7 +42,7 @@ function ParagraphList({ title, descriptions, highlight, index }: ListProps) {
             return (
               <div key={i} className="flex flex-col gap-2">
                 {item.title && (
-                  <p className="text-xs md:text-base text-header-text leading-8 font-semibold">
+                  <p className="text-sm md:text-base text-header-text leading-8 font-semibold">
                     {item.title}
                   </p>
                 )}
@@ -50,7 +50,7 @@ function ParagraphList({ title, descriptions, highlight, index }: ListProps) {
                   {item.list.map((li) => (
                     <li
                       key={li}
-                      className="text-[10px] md:text-sm text-header-text "
+                      className="text-[12px] md:text-sm text-header-text "
                     >
                       {li}
                     </li>
