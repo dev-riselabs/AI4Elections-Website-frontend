@@ -22,7 +22,7 @@ function Download() {
           </p>
         </div>
         <a
-          href="/Concept Doc_AI4Elections_by_Rise_Networks_in_Collaboration_with_INEC_and_Partners.pdf"
+          href="/Concept_Doc_AI4Elections_by_Rise_Networks_in_Collaboration_with_INEC_and_Partners.pdf"
           download
           className="flex items-center gap-2 bg-accent-orange text-white font-bold text-sm md:text-lg rounded-md px-2 md:px-6 py-3 justify-center"
         >
