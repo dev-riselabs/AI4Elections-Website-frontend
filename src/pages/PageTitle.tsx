@@ -8,19 +8,19 @@ function PageTitle() {
     useEffect(()=>{
         const pagesMetadata = {
             '/' :{
-                title : 'AI4Elections Innovations: Empowering Youth & Tech in',
+                title : 'AI4Elections Innovations: Empowering Youth & Tech in Governance | Rise Networks',
                 description : "The #AI4Elections Hackathon is a national, multidisciplinary, nonpartisan electoral innovation project created by Rise Networks to mobilise and connect Nigeria's technology ecosystem, electoral experts, academic institutions, young innovators, researchers, developers and civil society to develop usable, practical, safe and responsible artificial intelligence and emerging technologies tools, solutions, platforms and applications for electoral processes, integrity, transparency, inclusion and democratic participation in Nigeria.",
             }, 
             '/application' :  {
-                title : 'Apply for #AI4Elections',
+                title : 'Apply for #AI4Elections | Official Application Form | Rise Networks ',
                 description : 'description',
             },
             '/community-page' : {
-                 title : 'Join #AI$Elections Community',
+                 title : 'Community Hub & Collaborator Network | #AI4Elections | Rise Networks',
                  description : 'description',
             }, 
             '/terms-condition' : {
-                title : '#AI4Elections Terms and Condition',
+                title : 'Terms & Conditions & Official Rules | #AI4Elections | Rise Networks',
                 description : 'description',
             }
         }
