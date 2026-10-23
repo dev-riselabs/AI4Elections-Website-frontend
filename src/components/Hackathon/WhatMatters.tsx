@@ -302,7 +302,7 @@ export default function Awards() {
             </p>
 
             <h2 className="mb-3 font-mono text-2xl font-bold tracking-wide sm:text-3xl">
-              ₦5 MILLION PRIZE POOL
+              ₦10 MILLION PRIZE POOL
             </h2>
 
             <p className="max-w-5xl font-mono text-[10px] leading-5 text-white/90 sm:text-[11px]">

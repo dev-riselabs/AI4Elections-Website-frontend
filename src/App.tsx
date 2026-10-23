@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
+import PageTitle from "./pages/PageTitle";
 
 const Homepage = lazy(() => import("./pages/Homepage"));
 const ApplicationPage = lazy(() => import("./pages/ApplicationPage"));
@@ -20,6 +21,7 @@ export default function App() {
           </div>
         }
       >
+        <PageTitle/>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/application" element={<ApplicationPage />} />
