@@ -194,7 +194,7 @@ export default function Hero() {
                   to="/community-page"
                   className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1vw] lg:text-md px-10 md:px-8 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
                 >
-                  Join #AI4Elections Dev Hub{" "}
+                  Join #AI4Elections Development Hub and Community of Practice
                   <motion.span
                     animate={{ x: [0, 4, 0] }}
                     transition={{

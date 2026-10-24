@@ -27,7 +27,7 @@ const CTACyan: React.FC = () => {
                 to="/community-page"
                 className="flex items-center gap-4 bg-accent-text hover:bg-orange-600 transition-all duration-200 text-white text-xs md:text-[1.2vw] px-4 md:px-5 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
               >
-                Join #AI4Elections Dev Hub
+                Join #AI4Elections Development Hub and Community of Practice
                 <FaArrowRight />
               </Link>
             </div>

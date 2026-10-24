@@ -310,7 +310,7 @@ function FaqContainer() {
                 will develop a post-hackathon pathway for promising solutions,
                 potentially including mentorship, refinement, incubation and
                 opportunities for responsible piloting. At the end of the
-                Hackathon, Rise Networks will set up the #AI4Elections Dev Hub
+                Hackathon, Rise Networks will set up the #AI4Elections Development Hub
                 and Community of Practice as a permanent national network for
                 electoral technology and responsible AI. The community of
                 practice will maintain a consent-based registry of participants,

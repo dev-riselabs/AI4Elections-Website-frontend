@@ -159,7 +159,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="w-full">
-            <p className="text-[4vw] font-medium leading-relaxed text-white md:text-[2vw] xl:text-[1.2vw]">
+            <p className="text-[4vw] font-robotoMono font-medium leading-relaxed text-white md:text-[2vw] xl:text-[1.2vw]">
               Driving Africa&apos;s AI Future: Empowering People, Shaping
               Policy, and Transforming Communities.
             </p>
@@ -171,7 +171,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-9 mt-7 md:mt-10 grid gap-6 md:grid-cols-3 lg:grid-cols-4 xl:gap-8">
             {footerGroups.map((group) => (
               <div key={group.title}>
-                <h3 className="mb-4 text-[12px] font-bold tracking-[0.06em] text-[#f5a15b] md:text-[13px]">
+                <h3 className="mb-4 text-[12px] font-robotoMono font-bold tracking-[0.06em] text-[#f5a15b] md:text-[13px]">
                   {group.title}
                 </h3>
 
