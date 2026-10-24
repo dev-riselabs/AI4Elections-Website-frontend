@@ -60,7 +60,7 @@ export default function Hero() {
           download
           className="flex items-center gap-2 bg-accent-orange  justify-center text-white font-bold text-[3.9vw] md:text-[1.2vw] rounded-md px-2 md:px-6 py-3 md:self-center cursor-pointer col-span-2 md:col-span-1"
         >
-          Download Call for Applicaion <FaArrowRight />
+          Download Call for Applications <FaArrowRight />
         </a>
         {/* <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-3"> */}
         {/* Left: Dark blue background with white text */}
