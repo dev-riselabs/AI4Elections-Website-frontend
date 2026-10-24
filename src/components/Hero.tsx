@@ -5,30 +5,27 @@ import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
 const heroSlides = [
-  "/AI4ELECTIONS_HACKATHON_FLIER_B.png",
-  "/AI4ELECTIONS_WORLD_PRESS_CONFERENCE_&_ECOSYSTEM_ROUND_TABLE.png",
-  // "/hero-img.jpg",
-  "/slider/ISA04871.png",
-  "/slider/ISA04945_1.png",
-  "/slider/ISA04945_2.png",
-  "/slider/ISA04975_1.png",
-  "/slider/ISA05065_1.png",
-  "/slider/ISA05551_1.png",
-  "/slider/ISA05595_1.png",
-  "/slider/ISA05764_1.png",
-  "/slider/ISA05764_2.png",
-  "/slider/ISA05886_1.png",
-  "/slider/ISA05764_3.png",
-  "/slider/ISA05896_1.png",
-  "/slider/ISA05939_1.png",
-  "/slider/ISA06005_1.png",
-  "/slider/ISA06005_2.png",
-  "/slider/ISA06202.jpg",
-  "/slider/ISA06274.jpg",
+  "/slider/optimized/hero-slide-01.jpg",
+  "/slider/optimized/hero-slide-02.jpg",
+  "/slider/optimized/hero-slide-03.jpg",
+  "/slider/optimized/hero-slide-04.jpg",
+  "/slider/optimized/hero-slide-05.jpg",
+  "/slider/optimized/hero-slide-06.jpg",
+  "/slider/optimized/hero-slide-07.jpg",
+  "/slider/optimized/hero-slide-08.jpg",
+  "/slider/optimized/hero-slide-09.jpg",
+  "/slider/optimized/hero-slide-10.jpg",
+  "/slider/optimized/hero-slide-11.jpg",
+  "/slider/optimized/hero-slide-12.jpg",
+  "/slider/optimized/hero-slide-13.jpg",
+  "/slider/optimized/hero-slide-14.jpg",
+  "/slider/optimized/hero-slide-15.jpg",
+  "/slider/optimized/hero-slide-16.jpg",
+  "/slider/optimized/hero-slide-17.jpg",
+  "/slider/optimized/hero-slide-18.jpg",
+  "/slider/optimized/hero-slide-19.jpg",
   "/flier_distribution.jpg",
   "/flier_distribution2.jpg",
-  
-  // "/National Innovation Summit Panel.png",
 ];
 
 export default function Hero() {
@@ -242,6 +239,7 @@ export default function Hero() {
                       alt="Hero People"
                       decoding="async"
                       fetchPriority={activeSlide === 0 ? "high" : "auto"}
+                      loading={activeSlide === 0 ? "eager" : "lazy"}
                       className="w-full max-w-md md:max-w-none object-contain align-center drop-shadow-2xl"
                       initial={{ opacity: 0, x: 36 }}
                       animate={{ opacity: 1, x: 0 }}
