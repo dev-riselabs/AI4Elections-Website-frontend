@@ -222,7 +222,7 @@ export default function Hero() {
                 </a>
                 <Link
                   to="/community-page"
-                  className="flex gap-2 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1.2vw] lg:text-[1.3vw] px-9 md:px-4 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
+                  className="flex gap-2 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1.2vw] lg:text-[1.3vw] px-9 md:px-4 xl:px-7  py-3 xl:py-4 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
                 >
                   Join #AI4Elections Development Hub and Community of Practice
                   <motion.span
@@ -291,7 +291,7 @@ export default function Hero() {
                       onClick={() => setActiveSlide(index)}
                       aria-label={`Show hero image ${index + 1}`}
                       aria-current={activeSlide === index ? "true" : undefined}
-                      className={`h-2.5 w-2.5 md:hidden lg:block rounded-full border border-white transition-colors ${
+                      className={`h-2 w-2 md:hidden lg:block rounded-full border border-white transition-colors ${
                         activeSlide === index ? "bg-white" : "bg-white/40"
                       }`}
                     />
