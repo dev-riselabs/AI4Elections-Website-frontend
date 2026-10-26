@@ -200,14 +200,14 @@ export default function Hero() {
               >
                 <Link
                   to="/application"
-                  className="w-full md:w-40 lg:w-46 xl:w-60 justify-center flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.4vw] text-white px-16 md:px-4 lg:px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
+                  className="w-full md:w-32 lg:w-46 xl:w-60 justify-center flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.4vw] text-white px-16 md:px-4 lg:px-8 py-2 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
                 >
                   APPLY NOW ! <FaArrowRight />
                 </Link>
                 <a
                   href="/INEC_ICT_Director_Remarks_for_#AI4Elections_World_Press_Conference_and_Ecosystem_Roundtable_in_Abuja_Nigeria_-_22102026.pdf"
                   download
-                  className="w-full md:w-40 lg:w-65 xl:w-100 justify-center flex gap-6 md:gap-6 text-center items-center bg-transparent transition-all duration-200 border border-accent-text hover:bg-orange-500  text-white text-[0.75rem] md:text-[1.2vw] lg:text-md px-2 md:px-4 lg:px-8 py-4 md:py-2 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
+                  className="w-full md:w-50 lg:w-66 xl:w-100 justify-center flex gap-6 md:gap-4 lg:gap-2 text-center items-center bg-white transition-all duration-200 hover:bg-orange-500  text-brand-blue text-[0.75rem] md:text-[1.4vw] lg:text-[1.1vw] px-2 md:px-4 lg:px-2 py-4 md:py-1 lg:py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer "
                 >
                   <motion.span
                     animate={{ x: [0, 4, 0] }}
@@ -222,7 +222,7 @@ export default function Hero() {
                 </a>
                 <Link
                   to="/community-page"
-                  className="flex gap-2 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1.2vw] lg:text-[1.3vw] px-9 md:px-4 xl:px-7  py-3 xl:py-4 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
+                  className="flex gap-2 md:gap-2 lg:gap-4 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1.25vw]  px-9 md:px-3 lg:px-4 xl:px-8  py-2 md:py-3 xl:py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
                 >
                   Join #AI4Elections Development Hub and Community of Practice
                   <motion.span
