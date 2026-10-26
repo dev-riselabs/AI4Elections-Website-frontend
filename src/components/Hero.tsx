@@ -207,7 +207,7 @@ export default function Hero() {
                 <a
                   href="/INEC_ICT_Director_Remarks_for_#AI4Elections_World_Press_Conference_and_Ecosystem_Roundtable_in_Abuja_Nigeria_-_22102026.pdf"
                   download
-                  className="w-full md:w-50 lg:w-66 xl:w-100 justify-center flex gap-6 md:gap-4 lg:gap-2 text-center items-center bg-white transition-all duration-200 hover:bg-orange-500  text-brand-blue text-[0.75rem] md:text-[1.4vw] lg:text-[1.1vw] px-2 md:px-4 lg:px-2 py-4 md:py-1 lg:py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer "
+                  className="w-full md:w-50 lg:w-66 xl:w-100 justify-center flex gap-6 md:gap-4 lg:gap-2 text-center items-center bg-white transition-all duration-200 hover:bg-orange-500/60 hover:text-white  text-brand-blue text-[0.75rem] md:text-[1.4vw] lg:text-[1.1vw] px-2 md:px-4 lg:px-2 py-4 md:py-1 lg:py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer "
                 >
                   <motion.span
                     animate={{ x: [0, 4, 0] }}
