@@ -161,7 +161,7 @@ function FaqContainer() {
                 What is the prize pool?
               </h4>
               <p className="text-xs md:text-base text-header-text">
-                The #AI4Elections inaugural edition has a prize pool of ₦5
+                The #AI4Elections inaugural edition has a prize pool of ₦10
                 million, comprising overall cash prizes and special awards. The
                 final prize terms, eligibility and award conditions are
                 contained in the #AI4Elections Concept Document.
