@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaArrowRight, FaChevronLeft, FaChevronRight, FaDownload } from "react-icons/fa";
 import CountdownTimer from "./CountDown";
 import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
@@ -200,13 +200,29 @@ export default function Hero() {
               >
                 <Link
                   to="/application"
-                  className="flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.4vw] text-white px-16 md:px-4 lg:px-12 py-3 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
+                  className="w-full md:w-40 lg:w-46 xl:w-60 justify-center flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.4vw] text-white px-16 md:px-4 lg:px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
                 >
                   APPLY NOW ! <FaArrowRight />
                 </Link>
+                <a
+                  href="/INEC_ICT_Director_Remarks_for_#AI4Elections_World_Press_Conference_and_Ecosystem_Roundtable_in_Abuja_Nigeria_-_22102026.pdf"
+                  download
+                  className="w-full md:w-40 lg:w-65 xl:w-100 justify-center flex gap-6 md:gap-6 text-center items-center bg-transparent transition-all duration-200 border border-accent-text hover:bg-orange-500  text-white text-[0.75rem] md:text-[1.2vw] lg:text-md px-2 md:px-4 lg:px-8 py-4 md:py-2 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
+                >
+                  <motion.span
+                    animate={{ x: [0, 4, 0] }}
+                    transition={{
+                      duration: 1.2,
+                      repeat: Infinity,
+                    }}
+                  >
+                    <FaDownload />
+                  </motion.span>
+                  Download INEC ICT Director’s Statement
+                </a>
                 <Link
                   to="/community-page"
-                  className="flex gap-8 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1vw] lg:text-md px-10 md:px-8 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
+                  className="flex gap-2 md:gap-2 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1.2vw] lg:text-[1.3vw] px-9 md:px-4 py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
                 >
                   Join #AI4Elections Development Hub and Community of Practice
                   <motion.span
@@ -275,7 +291,7 @@ export default function Hero() {
                       onClick={() => setActiveSlide(index)}
                       aria-label={`Show hero image ${index + 1}`}
                       aria-current={activeSlide === index ? "true" : undefined}
-                      className={`h-2.5 w-2.5 rounded-full border border-white transition-colors ${
+                      className={`h-2.5 w-2.5 md:hidden lg:block rounded-full border border-white transition-colors ${
                         activeSlide === index ? "bg-white" : "bg-white/40"
                       }`}
                     />
