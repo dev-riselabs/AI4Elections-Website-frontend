@@ -52,13 +52,10 @@ function FaqContainer() {
                 {/* The initiative is organised by */}
                 {/* in partnership with NITDA, NCC, NITHUB, CLEEN FOUNDATION INEC
                 and several other private and public institutions. */}
-                The partners: 
-                <Link
+                 The partners: &nbsp; <Link
                   to="https://risenetworks.org"
                   className="text-accent-text font-bold"
-                >
-                  Rise Networks
-                </Link>
+                > Rise Networks </Link>
                 , in collaboration with the Independent National Electoral
                 Commission (INEC) and other partners including the International
                 Centre for Investigative Reporting (ICIR), Google, Microsoft,
