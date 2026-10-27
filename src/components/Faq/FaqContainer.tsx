@@ -49,14 +49,25 @@ function FaqContainer() {
                 Who is organising the hackathon?
               </h4>
               <p className="text-xs md:text-base text-header-text">
-                The initiative is organised by{" "}
+                {/* The initiative is organised by */}
+                {/* in partnership with NITDA, NCC, NITHUB, CLEEN FOUNDATION INEC
+                and several other private and public institutions. */}
+                The partners:
                 <Link
                   to="https://risenetworks.org"
                   className="text-accent-text font-bold"
                 >
                   Rise Networks
-                </Link>{" "}
-                in partnership with NITDA, NCC, NITHUB, CLEEN FOUNDATION INEC and several other private and public institutions.
+                </Link>
+                , in collaboration with the Independent National Electoral
+                Commission (INEC) and other partners including the International
+                Centre for Investigative Reporting (ICIR), Google, Microsoft,
+                Meta, NITHUB at the University of Lagos, the Centre for
+                Information Technology and Development (CITAD) , CLEEN
+                Foundation , Tap Initiative for Citizens’ Development,
+                International Press Centre (IPC), Legal Naija, Ahmadu Bello
+                University and Federal University of Akure (FUTA) , with support
+                from the MacArthur Foundation and Luminate
               </p>
             </div>
           </div>
@@ -119,11 +130,16 @@ function FaqContainer() {
                 What are the Track areas?
               </h4>
               <p className="text-xs md:text-base text-header-text">
-                The five challenge tracks are: Electoral Information Integrity,
+                The five challenge tracks are: AI and Trustworthy Electoral
+                Information, Electoral Data Analysis, Operational insights &
+                Decision Support, Inclusive and Multilingual Electoral/Civic
+                Technology, Electoral Cybersecurity and Resilience, Election
+                Observation and Citizen Accountability
+                {/* Electoral Information Integrity,
                 Electoral Data Intelligence, Electoral Inclusion, Electoral
                 Cybersecurity and Resilience and Election Observation and
                 Citizen Accountability. Detailed Technical briefs are available
-                in the official challenge repository.
+                in the official challenge repository. */}
               </p>
             </div>
           </div>
@@ -178,7 +194,7 @@ function FaqContainer() {
               </h4>
               <p className="text-xs md:text-base text-header-text">
                 The national Finals, Innovation Showcase and Awards Ceremony are
-                planned for Abuja in December 2026, ahead of the forthcoming
+                planned for Lagos in December 2026, ahead of the forthcoming
                 general elections. Exact dates, venues and participation
                 arrangements will be communicated through official channels.
               </p>
@@ -310,21 +326,21 @@ function FaqContainer() {
                 will develop a post-hackathon pathway for promising solutions,
                 potentially including mentorship, refinement, incubation and
                 opportunities for responsible piloting. At the end of the
-                Hackathon, Rise Networks will set up the #AI4Elections Development Hub
-                and Community of Practice as a permanent national network for
-                electoral technology and responsible AI. The community of
-                practice will maintain a consent-based registry of participants,
-                researchers, developers, mentors, institutions and alumni and
-                its activities will include monthly technical and research
-                sessions, quarterly project clinics, university chapters,
-                mentorship, newsletters, research collaborations and annual
-                innovation challenges. The registry will capture professional
-                interests, skills, affiliations and preferred opportunities,
-                with clear privacy notices, appropriate access controls and
-                mechanisms for members to update or withdraw their information.
-                The community of practice will support sustained collaboration
-                and provide a talent and research pipeline for future
-                public-interest technology initiatives.
+                Hackathon, Rise Networks will set up the #AI4Elections
+                Development Hub and Community of Practice as a permanent
+                national network for electoral technology and responsible AI.
+                The community of practice will maintain a consent-based registry
+                of participants, researchers, developers, mentors, institutions
+                and alumni and its activities will include monthly technical and
+                research sessions, quarterly project clinics, university
+                chapters, mentorship, newsletters, research collaborations and
+                annual innovation challenges. The registry will capture
+                professional interests, skills, affiliations and preferred
+                opportunities, with clear privacy notices, appropriate access
+                controls and mechanisms for members to update or withdraw their
+                information. The community of practice will support sustained
+                collaboration and provide a talent and research pipeline for
+                future public-interest technology initiatives.
               </p>
             </div>
           </div>
@@ -465,13 +481,10 @@ function FaqContainer() {
 
         <div className="flex flex-col gap-4 w-full px-4 md:px-14">
           <p className="text-sm md:text-lg faq-heading font-semibold">
-            <Link
-              to="/application"
-              className="text-accent-text font-bold"
-            >
+            <Link to="/application" className="text-accent-text font-bold">
               Application Link
-            </Link> -
-            ai4elections.risenetworks.org
+            </Link>{" "}
+            - ai4elections.risenetworks.org
           </p>
           <p className="text-xs md:text-base text-header-text">
             Thank You and Best Wishes.

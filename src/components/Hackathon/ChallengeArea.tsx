@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 const topics = [
   {
     id: 1,
-    title: "AI & Electoral Information Integrity",
+    title: "AI and Trustworthy Electoral Information",
     description:
       "Solutions for detecting, assessing and responding to AI-generated or manipulated electoral information, synthetic media, impersonation and misleading content.Outputsare expected toinclude information verification tools, provenance systems, multilingual fact-checking assistance and responsible information -analysis systems.",
   },
   {
     id: 2,
-    title: "Electoral Data Intelligence",
+    title: "Electoral Data Analysis, Operational insights & Decision Support",
     description:
       "Responsible AI applications for analysing authorised electoral datasets, improving data quality, processing public documents, supporting logistics analysis and identifying data anomalies for human review. Solutions must not independently declare electoral results or substitute algorithmic outputs for legally authorised electoral processes.",
   },
   {
     id: 3,
-    title: "Inclusive & Multilingual Civic Technology",
+    title: "Inclusive and Multilingual Electoral/Civic Technology",
     description:
       "Accessible voter-information tools, Nigerian-language electoral and civic information, assistive interfacesfor people with disabilities, digital literacy solutions and technology addressing barriers to electoral toral participation.",
   },
   {
     id: 4,
-    title: "Electoral Cybersecurity & Resilience",
+    title: "Electoral Cybersecurity and Resilience",
     description: `Defensive tools, authorised simulations, security monitoring concepts, privacy -preserving systems and resilience approaches 
 for electoral technology. No testing of live electoral systems or unauthorised access to institutional infrastructure will be 
 permitted.This track specifically invites participants to develop responsible, defensive and privacy -preserving technologies 
@@ -36,7 +36,7 @@ environments.`,
   },
   {
     id: 5,
-    title: "Election Observation & Citizen Accountability",
+    title: "Election Observation and Citizen Accountability",
     description: `Tools for structured observation reporting, incident documentation, civic feedback, public information access and transparency, 
 with appropriate safeguards for observers and citizens. Final problem statements will be developed with relevant subject -matter 
 experts and prospective institutional partners. Participation by an institution will not imply endorsement of any so
