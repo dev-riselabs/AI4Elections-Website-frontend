@@ -49,10 +49,10 @@ function FaqContainer() {
                 Who is organising the hackathon?
               </h4>
               <p className="text-xs md:text-base text-header-text">
-                {/* The initiative is organised by */}
+                The initiative is led by
                 {/* in partnership with NITDA, NCC, NITHUB, CLEEN FOUNDATION INEC
                 and several other private and public institutions. */}
-                 The partners: &nbsp; <Link
+                 <Link
                   to="https://risenetworks.org"
                   className="text-accent-text font-bold"
                 > Rise Networks </Link>
