@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 
 const locationApi = "https://countriesnow.space/api/v0.1/countries";
+const federalCapitalTerritoryCities = [
+  "Abaji",
+  "Abuja",
+  "Bwari",
+  "Gwagwalada",
+  "Kuje",
+  "Kwali",
+];
 
 const selectClassName =
   "rounded-xl bg-form-input shadow text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all disabled:cursor-not-allowed disabled:opacity-60";
@@ -116,6 +124,10 @@ function LocationFields() {
       return;
     }
 
+    if (countryName === "Nigeria" && stateName === "Federal Capital Territory") {
+      return;
+    }
+
     const controller = new AbortController();
 
     requestLocationData<string[]>(
@@ -211,10 +223,14 @@ function LocationFields() {
           disabled={!countryName || statesLoading || states.length === 0}
           onChange={(event) => {
             const nextState = event.currentTarget.value;
+            const hasLocalCities =
+              countryName === "Nigeria" &&
+              nextState === "Federal Capital Territory";
+
             setStateName(nextState);
             setCityName("");
-            setCities([]);
-            setCitiesLoading(Boolean(nextState));
+            setCities(hasLocalCities ? federalCapitalTerritoryCities : []);
+            setCitiesLoading(Boolean(nextState) && !hasLocalCities);
             setCitiesError(false);
           }}
         >
