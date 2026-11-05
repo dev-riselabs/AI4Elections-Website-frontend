@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import { FaArrowRight, FaChevronLeft, FaChevronRight, FaDownload } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaChevronLeft,
+  FaChevronRight,
+  FaDownload,
+} from "react-icons/fa";
 import CountdownTimer from "./CountDown";
 import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
@@ -157,7 +162,7 @@ export default function Hero() {
                   </span>
                   <span className="text-accent-yellow">
                     {" "}
-                  Thursday 12th November 2026 at 11:59pm WAT
+                    Thursday 12th November 2026 at 11:59pm WAT
                   </span>
                 </span>
               </motion.div>
@@ -233,6 +238,39 @@ export default function Hero() {
                 </Link>
               </motion.div>
               <CountdownTimer />
+              <motion.div className="px-2 md:px-6 lg:pl-10 mb-3">
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.7, delay: 0.4 }}
+                  className="text-xs md:text-[1.4vw] text-white text-justify leading-[1.8]"
+                >
+                  Information Session
+                </motion.p>
+                <span className="text-[4vw] md:text-sm">
+                  <span className="text-accent-text font-semibold">
+                    Date:
+                  </span>
+                  <span className="text-accent-yellow">
+                    {" "}
+                    Monday 9th November 2026 at 12:00 noon WAT
+                  </span>
+                </span>
+                <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.6 }}
+                className="md:mb-4 xl:mb-8 pt-2"
+              >
+                <Link
+                  to="https://meet.google.com/vbo-wtkm-dxg"
+                  className="w-full md:w-[17vw] lg:w-[24vw]  text-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.2vw] text-white px-16 md:px-4 lg:px-6 py-2 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
+                >
+                  Join  Information Session
+                </Link>
+              </motion.div>
+                
+              </motion.div>
             </motion.div>
 
             {/* Right Column */}
