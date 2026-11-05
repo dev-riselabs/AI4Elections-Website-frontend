@@ -223,7 +223,7 @@ export default function Hero() {
                 </a>
                 <Link
                   to="/community-page"
-                  className="flex gap-2 md:gap-2 lg:gap-4 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1.25vw]  px-9 md:px-3 lg:px-4 xl:px-6  py-2 md:py-3 xl:py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
+                  className="flex gap-2 md:gap-2 lg:gap-4 text-center items-center bg-transparent hover:bg-white/10 transition-all duration-200 border border-special-green-icon  text-white text-[0.75rem] md:text-[1.25vw] xl:text-[1vw]  px-9 md:px-3 lg:px-4 xl:px-6  py-2 md:py-3 xl:py-3 rounded-lg font-semibold hover:-translate-y-0.5 cursor-pointer"
                 >
                   Join #AI4Elections Development Hub and Community of Practice
                   <motion.span
