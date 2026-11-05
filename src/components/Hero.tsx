@@ -264,7 +264,7 @@ export default function Hero() {
               >
                 <Link
                   to="https://meet.google.com/vbo-wtkm-dxg"
-                  className="w-full md:w-[17vw] lg:w-[24vw]  text-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.2vw] text-white px-16 md:px-4 lg:px-6 py-2 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
+                  className="w-full md:w-[17vw] lg:w-[24vw]  text-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.2vw] text-white px-12 md:px-4 lg:px-6 py-3 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
                 >
                   Join  Information Session
                 </Link>
