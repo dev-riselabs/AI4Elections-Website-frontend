@@ -21,7 +21,7 @@ export default function Hero() {
   // };
 
   return (
-    <section className="relative isolate h-screen w-full bg-[url('/fallback.jpg')] overflow-hidden font-robotoMono p-2 md:p-6">
+    <section className="relative isolate h-screen w-full bg-[url('/fallback.jpg')] bg-no-repeat bg-cover bg-center md:bg-center  overflow-hidden font-robotoMono p-2 md:p-6">
       {/* <video
         className="absolute inset-0 z-0 h-full w-full cursor-pointer object-cover"
         src="/Hackathon.mp4"
