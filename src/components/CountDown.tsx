@@ -1,27 +1,17 @@
 import { useEffect, useState } from "react";
 
-const EVENT_MONTH = 10; // June (0-based)
+const EVENT_YEAR = 2026;
+const EVENT_MONTH = 10; // November (0-based)
 const START_DAY = 13;
-// const END_DAY = 10;
-
-const getTargetDate = () => {
-  const now = new Date();
-  let target = new Date(now.getFullYear(), EVENT_MONTH, START_DAY, 9, 0, 0);
-
-  if (now > target) {
-    target = new Date(now.getFullYear() + 1, EVENT_MONTH, START_DAY, 9, 0, 0);
-  }
-
-  return target;
-};
+const TARGET_DATE = new Date(EVENT_YEAR, EVENT_MONTH, START_DAY, 0, 0, 0);
 
 const format = (value: number) => String(value).padStart(2, "0");
 
 const calculateTimeLeft = () => {
-  const difference = +getTargetDate() - +new Date();
+  const difference = TARGET_DATE.getTime() - Date.now();
 
   if (difference <= 0) {
-    return null;
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
   }
 
   return {
@@ -36,8 +26,14 @@ export default function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
+    if (TARGET_DATE.getTime() <= Date.now()) return;
+
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
+
+      if (TARGET_DATE.getTime() <= Date.now()) {
+        clearInterval(timer);
+      }
     }, 1000);
 
     return () => clearInterval(timer);
@@ -81,8 +77,6 @@ export default function CountdownTimer() {
   //       </div>
   //     );
   //   }
-
-  if (!timeLeft) return null;
 
   return (
     <div className="flex items-center gap-3  text-center text-green100 px-4 md:pl-8">
