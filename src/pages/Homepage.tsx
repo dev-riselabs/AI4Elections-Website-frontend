@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Hero from "../components/Hero";
+import Hero from "../components/Hero_update";
 import Sponsors from "../components/Sponsors";
 import SubNav from "../components/SubNav";
 import TechnicalDetails from "../components/TechnicalDetails/TechnicalDetails";
