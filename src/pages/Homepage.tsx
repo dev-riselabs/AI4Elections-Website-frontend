@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Hero from "../components/Hero_update";
+import Hero from "../components/Hero";
 import Sponsors from "../components/Sponsors";
 import SubNav from "../components/SubNav";
 import TechnicalDetails from "../components/TechnicalDetails/TechnicalDetails";
@@ -14,6 +14,7 @@ import WhyParticipate from "../components/Hackathon/WhyParticipate";
 import WhatMatters from "../components/Hackathon/WhatMatters";
 import Eligibility from "../components/Hackathon/Eligibility";
 import Reveal from "../animation/Reveal";
+import AfterHero from "../components/AfterHero";
 
 const subNavTabs = [
   { id: "overview", label: "Overview" },
@@ -43,6 +44,7 @@ function Homepage() {
     <div className="w-full min-h-screen bg-white text-gray-900 selection:bg-orange-500 selection:text-white font-robotoMono">
       {/* 1. Navigation and Hero Section */}
       <Hero />
+      <AfterHero />
 
       {/* 2. Sponsors Component */}
       <Sponsors />
