@@ -1,28 +1,28 @@
-// import { useRef } from "react";
+import { useRef } from "react";
 
 export default function Hero() {
-  // const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   
 
-  // const togglePlayback = () => {
-  //   const video = videoRef.current;
+  const togglePlayback = () => {
+    const video = videoRef.current;
 
-  //   if (!video) return;
+    if (!video) return;
 
-  //   if (video.muted) {
-  //     video.muted = false;
-  //     // void video.play().catch((error) => {
-  //     //   console.error("Could not play hero video:", error);
-  //     // });
-  //   } else {
-  //     video.muted = true;
-  //   }
-  // };
+    if (video.muted) {
+      video.muted = false;
+      // void video.play().catch((error) => {
+      //   console.error("Could not play hero video:", error);
+      // });
+    } else {
+      video.muted = true;
+    }
+  };
 
   return (
     <section className="relative isolate h-screen w-full bg-[url('/fallback.jpg')] bg-no-repeat bg-cover bg-center md:bg-center  overflow-hidden font-robotoMono p-2 md:p-6">
-      {/* <video
+      <video
         className="absolute inset-0 z-0 h-full w-full cursor-pointer object-cover"
         src="/Hackathon.mp4"
         loop  
@@ -32,7 +32,7 @@ export default function Hero() {
         playsInline
         aria-hidden="true"
         onClick={togglePlayback}
-      /> */}
+      />
       {/* Top Bar (Navbar): Flex container with three distinct sections */}
       <header className="relative z-10 grid w-full grid-cols-[auto_auto] justify-between gap-5 md:grid-cols-[auto_auto_auto] md:gap-10">
         <a href="https://risenetworks.org" aria-label="Rise Networks website">
