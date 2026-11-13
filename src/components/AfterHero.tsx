@@ -93,7 +93,6 @@ export default function AfterHero() {
                     Application Opens:
                   </span>
                   <span className="text-accent-yellow">
-                    {" "}
                     Thursday 22nd October 2026
                   </span>
                 </span>
@@ -104,7 +103,6 @@ export default function AfterHero() {
                     Application Closes:
                   </span>
                   <span className="text-accent-yellow">
-                    {" "}
                     Thursday 12th November 2026 at 11:59pm WAT
                   </span>
                 </span>
@@ -116,15 +114,6 @@ export default function AfterHero() {
                 transition={{ duration: 0.7, delay: 0.4 }}
                 className="text-xs md:text-[1.15vw] text-white text-justify leading-[1.8] p-2 px-3 md:mb-0 md:pl-6 md:p-4 lg:pl-10 xl:mb-4"
               >
-                {/* The #AI4Elections Hackathon is a national, multidisciplinary,
-                nonpartisan electoral innovation project created by Rise
-                Networks to mobilise and connect Nigeria's technology ecosystem,
-                electoral experts, academic institutions, young innovators,
-                researchers, developers and civil society to develop usable,
-                practical, safe and responsible artificial intelligence and
-                emerging technologies tools, solutions, platforms and
-                applications for electoral processes, integrity, transparency,
-                inclusion and democratic participation in Nigeria. */}
                 The #AI4Elections Hackathon is a national, multidisciplinary,
                 nonpartisan electoral innovation project created by Rise
                 Networks to mobilise and connect Nigeria’s technology ecosystem,
@@ -144,7 +133,7 @@ export default function AfterHero() {
               >
                 <button
                   disabled
-                  className="w-full md:w-[17vw] lg:w-[18vw] justify-center flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.2vw] text-white px-16 md:px-4 lg:px-8 py-2 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-no-drop"
+                  className="w-full md:w-[17vw] lg:w-[18vw] justify-center flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 text-[4vw] md:text-[1.2vw] text-white px-14 md:px-4 lg:px-8 py-2 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-no-drop"
                 >
                   Application Closed ! <FaArrowRight />
                 </button>
@@ -203,10 +192,11 @@ export default function AfterHero() {
                   className="md:mb-4 xl:mb-8 pt-2"
                 >
                   <Link
-                    to="https://meet.google.com/vbo-wtkm-dxg"
+                    // to="https://meet.google.com/vbo-wtkm-dxg"
+                    to="#"
                     className="w-full md:w-[17vw] lg:w-[24vw]  text-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.2vw] text-white px-12 md:px-4 lg:px-6 py-3 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
                   >
-                    Join Information Session
+                    Information Session Ended
                   </Link>
                 </motion.div>
               </motion.div>
