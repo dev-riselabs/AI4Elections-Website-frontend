@@ -102,9 +102,9 @@ const About: React.FC = () => {
             </p>
             <p className="text-justify  text-sm md:text-md text-pillar-text leading-7 md:leading-9">
               <span className="font-bold">
-                The programme is built around three connected components:
+                The programme is built around three connected components: 
               </span>
-               #AI4Elections Hackathon, Elections Development Hub, and Elections Community of Practice. The Hackathon provides a
+               &nbsp; #AI4Elections Hackathon, Elections Development Hub, and Elections Community of Practice. The Hackathon provides a
               platform for teams to develop innovative solutions across key
               electoral challenge areas. Selected projects may progress into the
               Development Hub for further technical development, validation and
