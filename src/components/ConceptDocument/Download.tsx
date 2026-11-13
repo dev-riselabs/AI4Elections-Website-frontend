@@ -16,7 +16,7 @@ function Download() {
             structure, participation, safeguards, judging criteria and long-term
             vision. */}
             We encourage the full #AI4Elections concept document to learn more
-            about the initiative, its objectives, challenge areas, programme
+            about the programme, its objectives, challenge areas, programme
             structure, participation, safeguards, judging criteria and long-term
             vision.
           </p>
