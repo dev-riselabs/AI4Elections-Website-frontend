@@ -90,7 +90,7 @@ export default function AfterHero() {
               <motion.div className="px-2 md:px-6 lg:pl-10 mb-2">
                 <span className="text-[4vw] md:text-sm">
                   <span className="text-accent-text font-semibold">
-                    Application Opens:
+                    Application Opens: &nbsp;
                   </span>
                   <span className="text-accent-yellow">
                     Thursday 22nd October 2026
@@ -100,7 +100,7 @@ export default function AfterHero() {
               <motion.div className="px-2 md:px-6 lg:pl-10 mb-3">
                 <span className="text-[4vw] md:text-sm">
                   <span className="text-accent-text font-semibold">
-                    Application Closes:
+                    Application Closes: &nbsp;
                   </span>
                   <span className="text-accent-yellow">
                     Thursday 12th November 2026 at 11:59pm WAT
