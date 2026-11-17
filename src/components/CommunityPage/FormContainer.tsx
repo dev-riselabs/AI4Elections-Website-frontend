@@ -137,8 +137,10 @@ function FormContainer() {
                 >
                   What best describe your application? *
                 </label>
-                <select name="application_type" className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
-                  <option value="">Select</option><option value="Individual">Individual</option><option value="Team">Team</option><option value="Organization">Organization</option>
+                <select name="application_type" required className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all">
+                  <option value="">Select</option>
+                  <option value="Elections Community of Practice">Elections Community of Practice</option>
+                  <option value="Elections Development Hub">Elections Development Hub</option>
                 </select>
               </div>
               <div className="flex flex-col gap-2">
