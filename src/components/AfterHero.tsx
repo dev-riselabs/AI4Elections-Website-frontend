@@ -10,7 +10,7 @@ import { Link } from "react-router";
 import { AnimatePresence, motion } from "framer-motion";
 
 const heroSlides = [
-  "/slider/optimized/hero-slide-01.jpg",
+  "/slider/optimized/hero-slide-01.png",
   "/slider/optimized/hero-slide-02.jpg",
   "/slider/optimized/hero-slide-03.jpg",
   "/slider/optimized/hero-slide-04.jpg",
@@ -133,9 +133,9 @@ export default function AfterHero() {
               >
                 <button
                   disabled
-                  className="w-full md:w-[17vw] lg:w-[18vw] justify-center flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 text-[4vw] md:text-[1.2vw] text-white px-14 md:px-4 lg:px-8 py-2 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-no-drop"
+                  className="w-full md:w-[17vw] lg:w-[18vw] justify-center flex gap-8 md:gap-4  text-center items-center bg-accent-text hover:bg-orange-500 transition-all duration-200 text-[4vw] md:text-[1.2vw] lg:text-[1.1vw] text-white px-14 md:px-4 lg:px-5 py-2 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-no-drop"
                 >
-                  Application Closed ! <FaArrowRight />
+                  Applications Closed ! <FaArrowRight />
                 </button>
                 <a
                   href="/INEC_ICT_Director_Remarks_for_AI4Elections_World_Press_Conference_and_Ecosystem_Roundtable_in_Abuja_Nigeria_-_22102026.pdf"
@@ -189,15 +189,23 @@ export default function AfterHero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.6 }}
-                  className="md:mb-4 xl:mb-8 pt-2"
+                  className="flex flex-col md:flex-row gap-3 md:mb-4 xl:mb-8 pt-2"
                 >
                   <Link
                     // to="https://meet.google.com/vbo-wtkm-dxg"
                     to="#"
-                    className="w-full md:w-[17vw] lg:w-[24vw]  text-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.2vw] text-white px-12 md:px-4 lg:px-6 py-3 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
+                    className="w-full md:w-[20vw] lg:w-[24vw]  text-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.2vw] text-white px-8 md:px-4 lg:px-6 py-3 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
                   >
                     Information Session Ended
                   </Link>
+                  <a
+                    
+                    href="Concept_Doc_AI4Elections_by_Rise_Networks_in_Collaboration_with_INEC_and_Partners.pdf"
+                    download
+                    className="w-full md:w-[20vw] lg:w-[20vw]  text-center bg-accent-text hover:bg-orange-500 transition-all duration-200 md:text-[1.2vw] text-white px-12 md:px-4 lg:px-6 py-3 md:py-3 lg:py-2 rounded-lg font-semibold shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5 cursor-pointer"
+                  >
+                    Download Concept Note
+                  </a>
                 </motion.div>
               </motion.div>
             </motion.div>
