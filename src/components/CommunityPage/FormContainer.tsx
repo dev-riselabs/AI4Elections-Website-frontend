@@ -129,6 +129,23 @@ function FormContainer() {
                   />
                 </div>
               </div>
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="gender"
+                  className="text-sm md:text-base text-header-text font-medium"
+                >
+                  Gender
+                </label>
+                <select
+                  id="gender"
+                  name="gender"
+                  className="rounded-xl bg-form-input shadow-md text-sm md:text-base flex items-center gap-2.5 px-4 py-2.5 focus-within:border focus-within:border-brand-blue transition-all"
+                >
+                  <option value="">Select</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
               <LocationFields />
               <div className="flex flex-col gap-2">
                 <label

@@ -120,10 +120,16 @@ const partners: Partner[] = [
     alt: "Legal Naija Logo",
   },
   {
-    id: 15,
+    id: 17,
     name: "Real Broadcasting Network",
     src: "/real_broadcasting_network_logo.png",
     alt: "Real Broadcasting Network Logo",
+  },
+  {
+    id: 18,
+    name: "Centre for Journalism Innovation & Development",
+    src: "/centre_for_journalism_innovation_n_development.png",
+    alt: "Centre for Journalism Innovation & Development Logo",
   },
 ];
 
